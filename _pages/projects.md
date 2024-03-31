@@ -9,7 +9,6 @@ redirect_from:
 
 {% include base_path %}
 
-Projects:
 ======
 * MSU Co-PI, DOE SETO project, "Digital Twin Addressing Multi-Scale Operational Needs of IBR-rich Grids (DIAMOND)", October/2024-September/2027, led by Dr. Jin Tan at National Renewable Energy Laboratory. Fang's share at MSU: $330,000.
 
