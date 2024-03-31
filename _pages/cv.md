@@ -11,26 +11,21 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* Ph.D in Electrical Engineering, University of Tennessee, Knoxville, 2016
+* M.S. in Electrical Engineering, China Electric Power Research Institute, 2012
+* B.S. in Electrical Engineering, Huazhong University of Science and Technology, 2009
 
 Work experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * Github University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* August 2022: Assistant Professor
+  * Mississippi State University
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* July 2017 to August 2022: Senior Researcher
+  * National Renewable Energy Laboratory
 
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* July 2016 to July 2017: Power System Engineer
+  * GE Grid Solutions
+
   
 Skills
 ======
