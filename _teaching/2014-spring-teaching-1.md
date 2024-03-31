@@ -3,7 +3,7 @@ title: "Power Transmission Systems"
 collection: "teaching"
 type: "Undergraduate/Graduate course"
 venue: "Mississippi State University, ECE Department"
-date: "Fall 2023"
+date: "08/16/2023"
 ---
 
 
