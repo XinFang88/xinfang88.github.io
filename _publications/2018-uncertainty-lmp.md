@@ -3,7 +3,7 @@ title: "Introducing Uncertainty Components in Locational Marginal Prices for Pri
 collection: publications
 permalink: 'https://ieeexplore.ieee.org/abstract/document/8601342'
 date: 2019-02-17
-venue: 'IEEE Open Access Journal of Power and Energy '
+venue: 'IEEE Transactions on Power Systems'
 paperurl: 'https://ieeexplore.ieee.org/abstract/document/8601342'
 citation: 'X. Liu, Xin Fang, et al., "Frequency Nadir Constrained Unit Commitment for High Renewable Penetration Island Power Systems," in IEEE Open Access Journal of Power and Energy, vol. 11, pp. 141-153, 2024, doi: 10.1109/OAJPE.2024.3370504.'
 ---
