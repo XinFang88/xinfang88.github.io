@@ -27,26 +27,12 @@ Work experience
   * GE Grid Solutions
 
   
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
-
 Publications
 ======
   <ul>{% for post in site.publications reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
   
 Teaching
 ======
@@ -56,4 +42,7 @@ Teaching
   
 Service and leadership
 ======
-* Currently signed in to 43 different slack teams
+* Vice Chair, IEEE PSOPE Bulk Power System Planning Subcommittee, from 2023
+* Associate Editor, IEEE Transactions on Sustainable Energy, from 2023
+* Associate Editor, IEEE Transactions on Power Systems, from 2020
+* Associate Editor, Journal of Modern Power Systems and Clean Energy, from 2017
