@@ -1,18 +1,11 @@
 # Authors
 
 Name Name:
-  name        : "Name Name"
-  uri         : "http://name.com"
-  email       : "name@name.com"
-  bio         : "This is the first name."
-  avatar      : "bio-photo-2.jpg"
-  twitter     : "name"
-  google_plus : "Name"
+  name        : "Xin Fang"
+  uri         : "https://sites.google.com/view/drxinfang/home"
+  email       : "xfang@ece.msstate.edu"
+  bio         : "Xin Fang is an assistant professor at the Department of Electrical and Computer Engineering at Mississippi State University. He received his Ph. D. degree in Electrical Engineering from the University of Tennessee, Knoxville, in 2016. He was the principal investigator of multiple Department of Energy-funded research projects on cyber-physical dynamic modeling for distributed energy resources integration."
+  #avatar      : "bio-photo-2.jpg"
+  #twitter     : "name"
+  #google_plus : "Name"
 
-Name2 Name2:
-  name        : "Name2 Name2"
-  email       : "name2@name2.com"
-  bio         : "I ordered what?"
-  avatar      : "bio-photo.jpg"
-  twitter     : "name2"
-  google_plus : "Name"
