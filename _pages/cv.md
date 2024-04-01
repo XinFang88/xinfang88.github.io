@@ -43,7 +43,7 @@ Teaching
 
 AWARDS AND HONORS
 ======
-* IEEE PES Technical Committee Prize Paper Award, 2024
+* IEEE PES PSOPE Technical Committee Prize Paper Award, 2024
 * Outstanding Associate Editor for IEEE Transactions on Power Systems, 2023
 * Outstanding Associate Editor for IEEE Transactions on Sustainable Energy, 2022
 * Best Journal Paper Award of Journal of Modern Power Systems and Clean Energy, 2019
