@@ -26,6 +26,11 @@ Work experience
 * July 2016 to July 2017: Power System Engineer
   * GE Grid Solutions
 
+Current Research Projects
+======
+  <ul>{% for post in site.projects reversed %}
+    {% include archive-single-cv.html %}
+  {% endfor %}</ul>
 
 Selected Journal Publications
 ======
