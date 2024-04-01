@@ -40,7 +40,28 @@ Teaching
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
 
-  
+
+AWARDS AND HONORS
+======
+* IEEE PES Technical Committee Prize Paper Award, 2024
+* Outstanding Associate Editor for IEEE Transactions on Power Systems, 2023
+* Outstanding Associate Editor for IEEE Transactions on Sustainable Energy, 2022
+* Best Journal Paper Award of Journal of Modern Power Systems and Clean Energy, 2019
+* Outstanding Reviewer for IEEE Transactions on Power Systems, 2022, 2023
+* Outstanding Reviewer for IEEE Transactions on Sustainable Energy, 2021
+* Outstanding Reviewer for IEEE Transactions on Sustainable Energy, 2019
+* Outstanding Reviewer for Applied Energy, 2018
+* Outstanding Reviewer for International Journal of Electrical Power and Energy Systems, 2018
+* Outstanding Reviewer for IEEE Transactions on Sustainable Energy, 2017
+* Outstanding Reviewer for Electric Power Systems Research, 2016/2018
+* Excellent Reviewer for Journal of Modern Power and Clean Energy, 2016/2017/2018/2019
+* University of Tennessee Chancellor’s Citation Award for Extraordinary Professional Promise, 2016
+* Department Fellowship, EECS Department, University of Tennessee, 2012/2013
+* Outstanding Graduate student at China Electric Power Research Institute, 2012
+* Self-improvement scholarship of HUST, 2007
+* Freshman scholarship of HUST, 2006
+
+
 Service and leadership
 ======
 * Vice Chair, IEEE PSOPE Bulk Power System Planning Subcommittee, from 2023
