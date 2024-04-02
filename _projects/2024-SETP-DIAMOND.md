@@ -4,6 +4,6 @@ collection: "projects"
 role: "MSU Co-PI"
 permalink: /projects/2024-SETP-DIAMOND
 Sponsor: DOE-SETO/NREL
-Funding: "$330,000"
+Funding: "Fang's share: $330,000"
 date: 2024-10-01 to 2027-09-30
 ---
