@@ -52,6 +52,7 @@ AWARDS AND HONORS
 * Outstanding Associate Editor for IEEE Transactions on Power Systems, 2023
 * Outstanding Associate Editor for IEEE Transactions on Sustainable Energy, 2022
 * Best Journal Paper Award of Journal of Modern Power Systems and Clean Energy, 2019
+* Best Conference Paper in IEEE PES General Meeting, 2018
 * Outstanding Reviewer for IEEE Transactions on Power Systems, 2022, 2023
 * Outstanding Reviewer for IEEE Transactions on Sustainable Energy, 2021
 * Outstanding Reviewer for IEEE Transactions on Sustainable Energy, 2019
