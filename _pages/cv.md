@@ -71,6 +71,6 @@ AWARDS AND HONORS
 Service and leadership
 ======
 * Vice Chair, IEEE PSOPE Bulk Power System Planning Subcommittee, from 2023
-* Associate Editor, IEEE Transactions on Sustainable Energy, from 2023
+* Associate Editor, IEEE Transactions on Sustainable Energy, from 2022
 * Associate Editor, IEEE Transactions on Power Systems, from 2020
 * Associate Editor, Journal of Modern Power Systems and Clean Energy, from 2017
