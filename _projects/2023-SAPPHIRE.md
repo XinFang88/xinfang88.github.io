@@ -4,6 +4,6 @@ collection: "projects"
 role: "MSU Co-PI"
 permalink: /projects/2023-SAPPHIRE
 Sponsor: DOE/NREL
-Funding: "Fang's share: $50,000"
+Funding: "Fang's share: $50,000 Total: $3,200,000"
 date: 2023-04-01 to 2025-03-31
 ---
