@@ -4,6 +4,6 @@ collection: "projects"
 role: "MSU Co-PI"
 permalink: /projects/2024-T-D-Cosim
 Sponsor: NREL
-Funding: "Fang's share: $50,000"
+Funding: "Fang's share: $50,000, Total: $400,000"
 date: 2024-01-01 to 2024-06-30
 ---
