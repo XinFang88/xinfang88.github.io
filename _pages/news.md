@@ -7,6 +7,8 @@ author_profile: true
 
 {% include base_path %}
 
+04/21/2024, our article "On the Decomposition of Locational Marginal Hydrogen Pricing? Part II: Solution Approach and Numerical Results" was accepted for publication in IEEE Transactions on Industrial Informatics. 
+
 03/19/2024, our proposal titled "Digital Twin Addressing Multi-Scale Operational Needs of IBR-rich Grids (DIAMOND)" has been selected for funding by DOE Solar Energy Technologies Office. Cheers!
 
 02/25/2024, our paper titled "Addressing Wind Power Forecast Errors in Day-Ahead Pricing With Energy Storage Systems: A Distributionally Robust Joint Chance-Constrained Approach" has been accepted for publication in the IEEE Transactions on Sustainable Energy.
