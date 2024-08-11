@@ -7,6 +7,8 @@ author_profile: true
 
 {% include base_path %}
 
+08/11/2024, our article "DC Near-area Voltage Stability Constrained Renewable Energy Integration for Regional Power Grids" was accepted for publication in IET Generation, Transmission & Distribution. 
+
 07/1/2024, our article "Frequency Security-Constrained Unit Commitment with Fast Frequency Support of DFIG-Based Wind Power Plants" was accepted for publication in International Journal of Electrical Power and Energy Systems. 
 
 04/21/2024, our article "On the Decomposition of Locational Marginal Hydrogen Pricing? Part II: Solution Approach and Numerical Results" was accepted for publication in IEEE Transactions on Industrial Informatics. 
