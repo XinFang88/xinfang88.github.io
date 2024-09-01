@@ -6,6 +6,7 @@ author_profile: true
 ---
 
 {% include base_path %}
+09/01/2024, our article "Stable Relay Learning Optimization Approach for Fast Power System Production Cost Minimization Simulation" was accepted for publication in IEEE Transactions on Power Systems.
 
 08/11/2024, our article "DC Near-area Voltage Stability Constrained Renewable Energy Integration for Regional Power Grids" was accepted for publication in IET Generation, Transmission & Distribution. 
 
