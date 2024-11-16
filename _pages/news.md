@@ -6,6 +6,9 @@ author_profile: true
 ---
 
 {% include base_path %}
+11/16/2024, our article "Multi-Timescale Modeling Framework of Hybrid Power Plants Providing Secondary Frequency Regulation" was accepted for publication in IEEE Open Access Journal of Power and Energy.
+
+
 10/06/2024, our project titled "Unlocking Dynamic Thermal Rating Benefits for Distribution Systems" has been selected for funding by the DOE Office of Electricity. Cheers!
 
 09/01/2024, our article "Stable Relay Learning Optimization Approach for Fast Power System Production Cost Minimization Simulation" was accepted for publication in IEEE Transactions on Power Systems.
