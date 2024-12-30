@@ -6,6 +6,8 @@ author_profile: true
 ---
 
 {% include base_path %}
+12/30/2024, our article "Dynamics-incorporated Modeling Framework for Stability Constrained Scheduling Under High-penetration of Renewable Energy" was accepted for publication in IEEE Transactions on Sustainable Energy.
+
 11/16/2024, our article "Multi-Timescale Modeling Framework of Hybrid Power Plants Providing Secondary Frequency Regulation" was accepted for publication in IEEE Open Access Journal of Power and Energy.
 
 
