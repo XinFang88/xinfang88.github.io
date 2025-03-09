@@ -3,7 +3,6 @@ title: "Why LMP at some locations can be higher than the most expensive unit's p
 collection: blogs
 type: "Interesting thoughts"
 permalink: /blogs/LMP
-venue: "Mississippi State University"
 date: 2025-03-08
 ---
 
