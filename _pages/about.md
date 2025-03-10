@@ -15,5 +15,5 @@ Before joining Mississippi State University, he was a senior researcher at DoE N
 
 Xin Fang has been an Associate Editor of the Journal of Modern Power Systems and Clean Energy since 2019, an Associate Editor of the IEEE Transactions on Power Systems in 2020-2023, and an Associate Editor of the IEEE Transactions on Sustainable Energy since 2022. He is an Outstanding Reviewer of the IEEE Transactions on Sustainable Energy for 2017, 2019, and 2021 and an Outstanding Reviewer of the IEEE Transactions on Power Systems for 2022 and 2023. He was an Outstanding Associate Editor for IEEE Transactions on Sustainable Energy in 2022. He was an Outstanding Associate Editor for IEEE Transactions on Power Systems in 2023. He is a Senior Member of the IEEE.
 
-Dr. Fang has multiple Ph.D. student openings for Spring and Fall 2025. The focusing areas include power system optimization, dynamics, transmission and distribution cosimulation, electric grid, and transportation cosimulation. A Master's degree is preferred for Ph.D. applications.
+Dr. Fang has multiple Ph.D. student openings for Fall 2025. The focusing areas include power system optimization, dynamics, transmission and distribution cosimulation, electric grid, and transportation cosimulation. A Master's degree is preferred for Ph.D. applications.
 
