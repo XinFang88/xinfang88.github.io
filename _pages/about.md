@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "IDEAL Lab: Intelligent Decarbonization for Equitable Access to Energy Laboratory"
+title: "IDEAL Lab: Intelligent Decarbonization for Energy Access and Reliability Laboratory"
 author_profile: true
 redirect_from: 
   - /about/
