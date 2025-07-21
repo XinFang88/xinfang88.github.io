@@ -8,10 +8,10 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Xin Fang / Assistant Professor @MSU"
+title                    : "Xin Fang / Assistant Professor @USC"
 title_separator          : "-"
 name                     : &name "Xin Fang"
-description              : &description "Assistant Professor at ECE MSU"
+description              : &description "Assistant Professor at EE USC"
 URL                      : "https://xinfang88.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "https://github.com/XinFang88/xinfang88.github.io"
@@ -24,11 +24,11 @@ author:
   avatar           : "xf51.jpeg"
   name             : "Xin Fang"
   pronouns         : # example: "she/her"  
-  bio              : "Dr. Fang is an Assistant Professor at Mississippi State University"
-  location         : "Starkville, MS"
-  employer         : "Mississippi State University"
+  bio              : "Dr. Fang is an Assistant Professor at University of South Carolina"
+  location         : "Columbia, SC"
+  employer         : "University of South Carolina"
   uri              : # URL
-  email            : "xfang@ece.msstate.edu" 
+  email            : "fangxin@sc.edu" 
 
   # Academic websites
   arxiv            : # URL - Update with the correct link to your profile
