@@ -9,7 +9,7 @@ redirect_from:
 
 Welcome to the IDEAL Lab, where energy innovation meets impact under the guidance of Dr. Xin Fang! We're at the forefront of pioneering intelligent decarbonization strategies, ensuring not just an affordable renewable energy transition, but one that embodies reliability and stability. Join us as we reimagine a world where affordable clean electricity for all isn't just a dream, but a tangible reality!
 
-Xin Fang is an Assistant Professor at Mississippi State University's Department of Electrical and Computer Engineering. He received his Ph. D. degree in Electrical Engineering from the University of Tennessee, Knoxville, in 2016. He was the principal investigator of multiple Department of Energy-funded research projects on cyber-physical dynamic modeling for distributed energy resources integration.
+Xin Fang is an Assistant Professor at University of South Carolina's Department of Electrical Engineering. From 2022-2025, he was at Mississippi State University's Department of Electrical and Computer Engineering. He received his Ph. D. degree in Electrical Engineering from the University of Tennessee, Knoxville, in 2016. He was the principal investigator of multiple Department of Energy-funded research projects on cyber-physical dynamic modeling for distributed energy resources integration.
 
 Before joining Mississippi State University, he was a senior researcher at DoE National Renewable Energy Laboratory (NREL), Golden, CO, from 2017 to 2022.
 

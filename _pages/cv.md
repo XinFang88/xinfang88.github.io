@@ -17,6 +17,9 @@ Education
 
 Work experience
 ======
+* August 2025: Assistant Professor
+  * University of South Carolina
+
 * August 2022: Assistant Professor
   * Mississippi State University
 

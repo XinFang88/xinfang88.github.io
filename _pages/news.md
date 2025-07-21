@@ -6,6 +6,8 @@ author_profile: true
 ---
 
 {% include base_path %}
+08/16/2025, Dr. Fang move to University of South Carolina to join the Department of Electrical Engineering at USC.
+
 02/05/2025, the PhD student Prasant Basnet started a graduate internship at National Renewable Energy Laboratory (NREL).
 
 
