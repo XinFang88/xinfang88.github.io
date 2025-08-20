@@ -9,14 +9,14 @@ main:
   - title: "Projects"
     url: /projects/    
 
-  - title: "Teaching"
+  - title: "Group"
+    url: /group/    
+
+    - title: "Teaching"
     url: /teaching/    
                 
   - title: "CV"
     url: /cv/
 
-  - title: "Group"
-    url: /group/    
-    
   - title: "Blog"
     url: /blogs/    
