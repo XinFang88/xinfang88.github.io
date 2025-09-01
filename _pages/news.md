@@ -6,6 +6,8 @@ author_profile: true
 ---
 
 {% include base_path %}
+09/01/2025, our paper "Inertia Estimation for Stability-Constrained Economic Dispatch of IBR Penetrated Grid" has been accepted by the inaugural IEEE PES International Conference 2026.
+
 08/16/2025, Dr. Fang move to University of South Carolina to join the Department of Electrical Engineering.
 
 08/14/2025, Our Paper Title: On the Decomposition of Locational Marginal Hydrogen Pricing: Problem Formulation and Theoretical Analysis, has been accepted for publication in CSEE Journal of Power and Energy Systems.
