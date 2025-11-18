@@ -6,6 +6,8 @@ author_profile: true
 ---
 
 {% include base_path %}
+11/18/2025, our paper "Frequency Stability Constrained Capacity Expansion Planning through Virtual Inertia and Droop Capacities Allocation of IBRs" has been accepted by the IEEE PES Transmission & Distribution Conference & Exposition 2026.
+
 09/01/2025, our paper "Inertia Estimation for Stability-Constrained Economic Dispatch of IBR Penetrated Grid" has been accepted by the inaugural IEEE PES International Conference 2026.
 
 08/16/2025, Dr. Fang move to University of South Carolina to join the Department of Electrical Engineering.
