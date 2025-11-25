@@ -1,7 +1,7 @@
 ---
 title: "Unlocking Dynamic Thermal Rating Benefits for Distribution Systems"
 collection: "projects"
-role: "MSU Co-PI"
+role: "USC Co-PI"
 permalink: /projects/2024-Dynamic-Thermal-Rating
 Sponsor: NREL
 Funding: "Fang's share: $50,000, Total: $250,000"

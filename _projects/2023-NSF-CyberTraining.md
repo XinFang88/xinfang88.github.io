@@ -1,7 +1,7 @@
 ---
 title: "Collaborative Research: CyberTraining: Pilot: PowerCyber: Computational Training for Power Engineering Researchers"
 collection: "projects"
-role: "MSU PI"
+role: "USC PI"
 permalink: /projects/2023-NSF-CyberTraining
 Sponsor: NSF
 Funding: "Fang's share: $120,000, Total: $300,000"
