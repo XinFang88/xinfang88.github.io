@@ -1,5 +1,5 @@
 ---
-title: "Power Transmission Systems"
+title: "ECE 4613/6613: Power Transmission Systems"
 collection: "teaching"
 type: "Undergraduate and Graduate course"
 permalink: /teaching/2014-spring-teaching-1

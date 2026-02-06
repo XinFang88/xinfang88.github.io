@@ -1,5 +1,5 @@
 ---
-title: "Electronic Circuits I"
+title: "ECE 3643: Electronic Circuits I"
 collection: teaching
 type: "Undergraduate Course"
 permalink: /teaching/2022-fall-teaching-1

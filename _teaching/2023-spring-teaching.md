@@ -1,5 +1,5 @@
 ---
-title: "Power Distribution Systems"
+title: "ECE 4633/6633: Power Distribution Systems"
 collection: teaching
 type: "Undergraduate and Graduate Course"
 permalink: /teaching/2015-spring-teaching-2
