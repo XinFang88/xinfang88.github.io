@@ -9,7 +9,7 @@ author_profile: true
 
 Current PhD students:
 ======
-Adarsha Chalise (from Spring 2026) originally from Nepal, earned his bachelor’s degree in electrical engineering from Tribhuvan University, Kathmandu, in 2023.
+Adarsha Chalise (from Spring 2026) is an Electrical Engineer (B.E.) who graduated from Pulchowk Campus, Institute of Engineering, Tribhuvan University, Lalitpur, Nepal. Adarsha’s work and interests are centered on sustainable energy systems, particularly renewable integration, microgrid behavior, and power system reliability. Project experience includes DC–DC buck–boost converter development; transmission and distribution system design; and MATLAB/Simulink studies on synchronous machine dynamics, grid-connected voltage-source converters, and PV optimization in standard test systems.
 
 
 Bishal Rijal (from Spring 2025) earned his bachelor’s degree in electrical engineering from Tribhuvan University, Kathmandu, in 2021. He then worked at Middle Mewa Hydropower, where he gained site-based experience with electrical equipment, before joining K&A in April 2023 to contribute to distribution design projects and impact studies for major U.S. utilities such as Pacific Gas and Electric, Duke Energy, and ComEd. In Spring 2025, he began his Ph.D. studies in Electrical and Computer Engineering at Mississippi State University, focusing on distribution transformer sizing considering demand-side resources. His research interests include power system optimization, renewable energy integration, and he is currently focusing on power system strength evaluation.
