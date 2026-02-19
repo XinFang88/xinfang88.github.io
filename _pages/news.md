@@ -6,6 +6,8 @@ author_profile: true
 ---
 
 {% include base_path %}
+02/18/2026, our paper "Enhancing Island Power Systems Operational Flexibility with Hybrid Power Plants" has been accepted by the IEEE GreenTech 2026.
+
 1/5/2026, our paper titled "Frequency Nadir Constrained Unit Commitment for High Renewable Penetration Island Power Systems," has been selected as one of two best papers in the IEEE Open Access Journal of Power and Energy in 2025! Congratulations! 
 
 11/18/2025, our paper "Frequency Stability Constrained Capacity Expansion Planning through Virtual Inertia and Droop Capacities Allocation of IBRs" has been accepted by the IEEE PES Transmission & Distribution Conference & Exposition 2026.
