@@ -6,7 +6,11 @@ author_profile: true
 ---
 
 {% include base_path %}
-02/18/2026, our paper "Enhancing Island Power Systems Operational Flexibility with Hybrid Power Plants" has been accepted by the IEEE GreenTech 2026.
+02/25/2026, our paper (first authored by my student Prasant Basnet) titled “Distributed Optimization and Control for Autonomous Distributed Energy Resource Power Dispatch and Frequency Regulation Considering Communication Failures,” has been accepted by Sustainable Energy, Grids and Networks.
+
+02/20/2026, my PhD student Bishal Rijal will work at Idaho National Laboratory in this summer as an intern. 
+
+02/18/2026, our paper titled "Enhancing Island Power Systems Operational Flexibility with Hybrid Power Plants" has been accepted by the IEEE GreenTech 2026.
 
 1/5/2026, our paper titled "Frequency Nadir Constrained Unit Commitment for High Renewable Penetration Island Power Systems," has been selected as one of two best papers in the IEEE Open Access Journal of Power and Energy in 2025! Congratulations! 
 
