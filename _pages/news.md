@@ -6,6 +6,8 @@ author_profile: true
 ---
 
 {% include base_path %}
+03/20/2026, our paper (first authored by my student Yuxin Deng) titled “Analytical Small-signal Stability Analysis of Low-Inertia Power System Frequency Response Considering Secondary Frequency Regulation,” has been accepted by Electric Power Systems Research.
+
 02/25/2026, our paper (first authored by my student Prasant Basnet) titled “Distributed Optimization and Control for Autonomous Distributed Energy Resource Power Dispatch and Frequency Regulation Considering Communication Failures,” has been accepted by Sustainable Energy, Grids and Networks.
 
 02/20/2026, my PhD student Bishal Rijal will work at Idaho National Laboratory in this summer as an intern. 
