@@ -8,10 +8,10 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Xin Fang / Assistant Professor @USC"
+title                    : "Xin Fang | IDEAL Lab"
 title_separator          : "-"
 name                     : &name "Xin Fang"
-description              : &description "Assistant Professor at EE USC"
+description              : &description "Power systems, grid dynamics, optimization, and intelligent decarbonization at the University of South Carolina."
 URL                      : "https://xinfang88.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "https://github.com/XinFang88/xinfang88.github.io"
@@ -24,7 +24,7 @@ author:
   avatar           : "xf51.jpeg"
   name             : "Xin Fang"
   pronouns         : # example: "she/her"  
-  bio              : "Dr. Fang is an Assistant Professor at University of South Carolina"
+  bio              : "Assistant Professor of Electrical Engineering at the University of South Carolina. Director of the IDEAL Lab."
   location         : "Columbia, SC"
   employer         : "University of South Carolina"
   uri              : # URL
@@ -40,7 +40,8 @@ author:
 
   
   # Social media
-  linkedin         : "https://www.linkedin.com/in/xin-fang-82b90646/"
+  linkedin         : "xin-fang-82b90646"
+  github           : "XinFang88"
 
 
 
