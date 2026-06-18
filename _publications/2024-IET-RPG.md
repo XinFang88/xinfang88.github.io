@@ -4,4 +4,5 @@ collection: publications
 date: 2024-07-01
 venue: 'IET Generation, Transmission & Distribution'
 citation: 'Hailei He, Yantao Zhang, Xin Fang, Qinyong Zhou, "DC Near-area Voltage Stability Constrained Renewable Energy Integration for Regional Power Grids," in IET Generation, Transmission & Distribution.'
+paperurl: 'https://ietresearch.onlinelibrary.wiley.com/doi/full/10.1049/gtd2.13254'
 ---
