@@ -12,6 +12,12 @@
   {% assign title = post.title %}
 {% endif %}
 
+{% if post.url contains "://" %}
+  {% assign post_permalink = post.url %}
+{% else %}
+  {% assign post_permalink = post.url | prepend: base_path %}
+{% endif %}
+
 <div class="{{ include.type | default: "list" }}__item">
   <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
     {% if include.type == "grid" and teaser %}
@@ -27,10 +33,12 @@
     {% endif %}
 
     <h2 class="archive__item-title" itemprop="headline">
-      {% if post.link %}
-        <a href="{{ post.link }}">{{ title }}</a> <a href="{{ base_path }}{{ post.url }}" rel="permalink"><i class="fa fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
+      {% if post.collection == 'publications' and post.paperurl %}
+        <a href="{{ post.paperurl }}">{{ title }}</a> <a href="{{ post_permalink }}" rel="permalink"><i class="fa fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
+      {% elsif post.link %}
+        <a href="{{ post.link }}">{{ title }}</a> <a href="{{ post_permalink }}" rel="permalink"><i class="fa fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
       {% else %}
-        <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
+        <a href="{{ post_permalink }}" rel="permalink">{{ title }}</a>
       {% endif %}
     </h2>
     
@@ -43,7 +51,7 @@
         {% elsif post.collection == 'projects' %}
           <p> {{ post.role }}, <i>{{ post.Sponsor }}</i>, <i>{{ post.Funding }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>        
         {% elsif post.collection == 'publications' %}
-          <p>Published in <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
+          <p>Published in <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }}{% if post.paperurl %} · <a href="{{ post.paperurl }}">Journal link</a>{% endif %}</p>
         {% elsif post.collection == 'blogs' %}
           <p> {{ post.type }}, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
         {% elsif post.date %}
@@ -57,11 +65,11 @@
     {% endif %}
     
     {% if post.citation and post.paperurl %}
-      <p>Recommended citation: {{ post.citation }} <a href="{{ post.paperurl }}">{{ post.paperurl }}</a></p>
+      <p>Recommended citation: {{ post.citation }} <a href="{{ post.paperurl }}">Journal link</a></p>
     {% elsif post.citation %}
       <p>Recommended citation: {{ post.citation }} </p>
     {% elsif post.paperurl %}
-      <p class="wordwrap">Download <a href=" {{ post.paperurl }} ">here</a></p>
+      <p class="wordwrap"><a href="{{ post.paperurl }}">Journal link</a></p>
     {% endif %}
 
   </article>
