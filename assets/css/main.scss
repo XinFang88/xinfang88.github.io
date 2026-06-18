@@ -146,3 +146,39 @@
     }
   }
 }
+
+/* Blog figure enhancements
+   ========================================================================== */
+
+.blog-figure {
+  display: block;
+  max-width: 46rem;
+  margin: 1.5em auto 2em;
+  text-align: center;
+
+  img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto 0.6em;
+    border: 1px solid $border-color;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(#000, 0.08);
+  }
+
+  figcaption {
+    max-width: 40rem;
+    margin: 0 auto;
+    color: mix(#fff, $text-color, 25%);
+    font-size: $type-size-6;
+    line-height: 1.45;
+  }
+}
+
+@include breakpoint(max-width $small) {
+  .blog-figure {
+    max-width: 100%;
+    margin: 1em 0 1.5em;
+  }
+}
