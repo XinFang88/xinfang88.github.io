@@ -6,6 +6,8 @@ author_profile: true
 ---
 
 {% include base_path %}
+06/18/2026, our paper (first authored by my student Yuxin Deng) titled “[Holistic Stability Region Evaluation of Low Inertia Power System Frequency Response](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lr3EP0AAAAAJ&sortby=pubdate&citation_for_view=lr3EP0AAAAAJ:7Hz3ACDFbsoC),” co-authored by Yuxin Deng, Xin Fang, Shuan Dong, and Jin Tan, has been accepted by the 2026 North American Power Symposium (NAPS 2026).
+
 03/20/2026, our paper (first authored by my student Yuxin Deng) titled “Analytical Small-signal Stability Analysis of Low-Inertia Power System Frequency Response Considering Secondary Frequency Regulation,” has been accepted by Electric Power Systems Research.
 
 02/25/2026, our paper (first authored by my student Prasant Basnet) titled “Distributed Optimization and Control for Autonomous Distributed Energy Resource Power Dispatch and Frequency Regulation Considering Communication Failures,” has been accepted by Sustainable Energy, Grids and Networks.
