@@ -28,6 +28,10 @@ redirect_from:
     <span>projects on dynamic modeling, grid resilience, and distributed energy resources</span>
   </div>
   <div class="home-stat">
+    <strong>NSF</strong>
+    <span>PowerCyber CyberTraining project for power engineering researchers</span>
+  </div>
+  <div class="home-stat">
     <strong>IEEE</strong>
     <span>senior member, associate editor, prize-paper author, and outstanding reviewer</span>
   </div>
