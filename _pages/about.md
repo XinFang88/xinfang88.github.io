@@ -45,6 +45,10 @@ redirect_from:
     <p>Frequency response, small-signal stability, virtual inertia, inverter-based resources, and analytical constraints that bridge dynamics with operations.</p>
   </section>
   <section class="home-card">
+    <h3>Grid Planning with Renewables</h3>
+    <p>Capacity expansion, transmission planning, and resource adequacy methods that help renewable-rich grids meet reliability, resilience, and decarbonization goals.</p>
+  </section>
+  <section class="home-card">
     <h3>Cyber-Physical Co-Simulation</h3>
     <p>Transmission-and-distribution co-simulation, distributed energy resource integration, electric transportation, and scalable grid digital twins.</p>
   </section>
