@@ -129,6 +129,29 @@
   }
 }
 
+.publication-view-radio {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  opacity: 0;
+}
+
+.publication-switcher .publication-view {
+  display: none;
+}
+
+#publication-option-chronological:checked ~ #publication-view-chronological,
+#publication-option-focus:checked ~ #publication-view-focus {
+  display: block;
+}
+
+#publication-option-chronological:checked ~ .publication-view-toggle label[for="publication-option-chronological"],
+#publication-option-focus:checked ~ .publication-view-toggle label[for="publication-option-focus"] {
+  background-color: $primary-color;
+  color: #fff;
+}
+
 .publication-view-toggle {
   display: flex;
   flex-wrap: wrap;
@@ -137,12 +160,9 @@
 
   .btn {
     margin: 0;
+    cursor: pointer;
     text-decoration: none;
   }
-}
-
-.publication-view[hidden] {
-  display: none;
 }
 
 .publication-view > h2 {

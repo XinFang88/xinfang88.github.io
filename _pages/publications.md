@@ -20,12 +20,41 @@ author_profile: true
 {% assign planning_titles = planning_titles | split: "|" %}
 {% assign cosim_titles = cosim_titles | split: "|" %}
 
+<style>
+  .publication-view-radio {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    opacity: 0;
+  }
+
+  .publication-switcher .publication-view {
+    display: none;
+  }
+
+  #publication-option-chronological:checked ~ #publication-view-chronological,
+  #publication-option-focus:checked ~ #publication-view-focus {
+    display: block;
+  }
+
+  #publication-option-chronological:checked ~ .publication-view-toggle label[for="publication-option-chronological"],
+  #publication-option-focus:checked ~ .publication-view-toggle label[for="publication-option-focus"] {
+    background-color: #3b5f88;
+    color: #fff;
+  }
+</style>
+
+<div class="publication-switcher">
+<input class="publication-view-radio" type="radio" name="publication-view-option" id="publication-option-chronological" checked>
+<input class="publication-view-radio" type="radio" name="publication-view-option" id="publication-option-focus">
+
 <div class="publication-view-toggle" aria-label="Publication list view">
-  <button class="btn btn--primary" type="button" aria-pressed="true" aria-controls="publication-view-chronological" data-publication-view-button="publication-view-chronological">Chronological</button>
-  <button class="btn" type="button" aria-pressed="false" aria-controls="publication-view-focus" data-publication-view-button="publication-view-focus">By Research Focus</button>
+  <label class="btn" for="publication-option-chronological">Chronological</label>
+  <label class="btn" for="publication-option-focus">By Research Focus</label>
 </div>
 
-<section id="publication-view-chronological" class="publication-view" data-publication-view>
+<section id="publication-view-chronological" class="publication-view publication-view--chronological">
   <h2>Chronological</h2>
   <ol class="publication-numbered-list">
     {% for post in chronological_publications %}
@@ -36,7 +65,7 @@ author_profile: true
   </ol>
 </section>
 
-<section id="publication-view-focus" class="publication-view" data-publication-view hidden>
+<section id="publication-view-focus" class="publication-view publication-view--focus">
   <h2>By Research Focus</h2>
   {% assign focus_number = 0 %}
   <div class="publication-cluster-list">
@@ -117,30 +146,4 @@ author_profile: true
     </section>
   </div>
 </section>
-
-<script>
-  (function () {
-    var buttons = document.querySelectorAll("[data-publication-view-button]");
-    var views = document.querySelectorAll("[data-publication-view]");
-
-    if (!buttons.length || !views.length) {
-      return;
-    }
-
-    buttons.forEach(function (button) {
-      button.addEventListener("click", function () {
-        var target = button.getAttribute("data-publication-view-button");
-
-        buttons.forEach(function (candidate) {
-          var active = candidate === button;
-          candidate.setAttribute("aria-pressed", active ? "true" : "false");
-          candidate.classList.toggle("btn--primary", active);
-        });
-
-        views.forEach(function (view) {
-          view.hidden = view.id !== target;
-        });
-      });
-    });
-  })();
-</script>
+</div>
