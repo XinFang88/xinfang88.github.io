@@ -142,12 +142,14 @@
 }
 
 #publication-option-chronological:checked ~ #publication-view-chronological,
-#publication-option-focus:checked ~ #publication-view-focus {
+#publication-option-focus:checked ~ #publication-view-focus,
+#publication-option-type:checked ~ #publication-view-type {
   display: block;
 }
 
 #publication-option-chronological:checked ~ .publication-view-toggle label[for="publication-option-chronological"],
-#publication-option-focus:checked ~ .publication-view-toggle label[for="publication-option-focus"] {
+#publication-option-focus:checked ~ .publication-view-toggle label[for="publication-option-focus"],
+#publication-option-type:checked ~ .publication-view-toggle label[for="publication-option-type"] {
   background-color: $primary-color;
   color: #fff;
 }
@@ -163,10 +165,6 @@
     cursor: pointer;
     text-decoration: none;
   }
-}
-
-.publication-view > h2 {
-  margin-top: 0.5em;
 }
 
 .publication-cluster-list {

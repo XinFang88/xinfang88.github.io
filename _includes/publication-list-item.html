@@ -19,15 +19,15 @@
     {% endif %}
   </p>
   <p class="publication-list-meta">
-    Published in <em>{{ pub.venue | strip }}</em>, {{ pub.date | default: "1900-01-01" | date: "%Y" }}{% if pub.paperurl %} · <a href="{{ pub.paperurl }}">Journal link</a>{% endif %}
+    Published in <em>{{ pub.venue | strip }}</em>, {{ pub.date | default: "1900-01-01" | date: "%Y" }}{% if pub.paperurl %} · <a href="{{ pub.paperurl }}">Paper link</a>{% endif %}
   </p>
   {% if pub.citation %}
     <p class="publication-list-citation">
-      <strong>Recommended citation:</strong> {{ pub.citation }}{% if pub.paperurl %} <a href="{{ pub.paperurl }}">Journal link</a>{% endif %}
+      <strong>Recommended citation:</strong> {{ pub.citation }}{% if pub.paperurl %} <a href="{{ pub.paperurl }}">Paper link</a>{% endif %}
     </p>
   {% elsif pub.paperurl %}
     <p class="publication-list-citation">
-      <a href="{{ pub.paperurl }}">Journal link</a>
+      <a href="{{ pub.paperurl }}">Paper link</a>
     </p>
   {% endif %}
 </div>
