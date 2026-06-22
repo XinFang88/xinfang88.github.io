@@ -129,16 +129,16 @@
   }
 }
 
-.research-cluster-list {
+.publication-cluster-list {
   margin: 1.25em 0 2em;
 }
 
-.research-cluster {
+.publication-cluster {
   padding: 1.4rem 0;
   border-top: 1px solid $border-color;
 
   &:first-child {
-    padding-top: 0.25rem;
+    padding-top: 0;
     border-top: 0;
   }
 
@@ -150,7 +150,7 @@
   }
 }
 
-.research-cluster__summary {
+.publication-cluster__summary {
   max-width: 50rem;
   margin-bottom: 0.9rem;
 
@@ -159,7 +159,7 @@
   }
 }
 
-.research-cluster__eyebrow {
+.publication-cluster__eyebrow {
   margin: 0 0 0.35em;
   color: mix(#000, $success-color, 25%);
   font-family: $sans-serif;
@@ -215,8 +215,9 @@
   text-decoration: none;
 }
 
-.home-publication-cta {
-  margin: -0.25em 0 1.75em;
+.publication-cluster-note {
+  max-width: 50rem;
+  margin: 0.25em 0 1.25em;
   font-family: $sans-serif;
   font-weight: 700;
 }
