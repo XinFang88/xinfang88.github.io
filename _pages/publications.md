@@ -9,7 +9,6 @@ author_profile: true
   <div class="wordwrap">You can also find my full publication record on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
 {% endif %}
 
-{% assign chronological_numbered_publications = site.publications | sort: "date" %}
 {% assign chronological_publications = site.publications | sort: "date" | reverse %}
 {% assign publication_count = chronological_publications | size %}
 {% capture optimization_titles %}Stable Relay Learning Optimization Approach for Fast Power System Production Cost Minimization Simulation|On the Decomposition of Locational Marginal Hydrogen Pricing−Part II: Solution Approach and Numerical Results|Addressing Wind Power Forecast Errors in Day-Ahead Pricing With Energy Storage Systems: A Distributionally Robust Joint Chance-Constrained Approach|Implications of electricity and gas price coupling in US New England region|DLMP of Competitive Markets in Active Distribution Networks: Models, Solutions, Applications, and Visions|How Can Probabilistic Solar Power Forecasts Be Used to Lower Costs and Improve Reliability in Power Spot Markets? A Review and Application to Flexiramp Requirements|State-of-the-art short-term electricity market operation with solar generation: A review|Two-stage stochastic optimization frameworks to aid in decision-making under uncertainty for variable resource generators participating in a sequential energy market|Redesigning capacity market to include flexibility via ramp constraints in high-renewable penetrated system|Practical Operations of Energy Storage Providing Ancillary Services: From Day-Ahead to Real-Time|Analytical Model of Day-ahead and Real-time Price Correlation in Strategic Wind Power Offering|A clustering-based scenario generation framework for power market simulation with wind integration|Deliverable Flexible Ramping Products Considering Spatiotemporal Correlation of Wind Generation and Demand Uncertainties|Linear Approximation Line Pack Model for Integrated Electricity and Natural Gas Systems OPF|Analysis of Wind Ramping Product Formulations in a Ramp-constrained Power Grid|Distributionally-robust chance constrained and interval optimization for integrated electricity and natural gas systems optimal power flow with wind uncertainties|Multi-Stage Stochastic Programming to Joint Economic Dispatch for Energy and Reserve With Uncertain Renewable Energy|Adjustable and distributionally robust chance-constrained economic dispatch considering wind power uncertainty|Decentralized wind uncertainty management: Alternating direction method of multipliers based distributionally-robust chance constrained optimal power flow|Introducing Uncertainty Components in Locational Marginal Prices for Pricing Wind Power and Load Uncertainties|Capacity Market Model Considering Flexible Resource Requirements|Potential of Wind Power to Provide Flexible Ramping Products and Operating Reserve|Mean-Variance Optimization-Based Energy Storage Scheduling Considering Day-Ahead and Real-Time LMP Uncertainties|Modelling wind power spatial-temporal correlation in multi-interval optimal power flow: A sparse correlation matrix approach|Bilevel Arbitrage Potential Evaluation for Grid-Scale Energy Storage Considering Wind Power and LMP Smoothing Effect|Hybrid component and configuration model for combined-cycle units in unit commitment problem|Multi-dimensional assessment of the developing situation of provincial electricity market considering the external economic factors|Evaluation of LMP Intervals Considering Wind Uncertainty|Day-ahead coordinated operation of utility-scale electricity and natural gas networks considering demand response based virtual power plants|Strategic CBDR bidding considering FTR and wind power|Strategic scheduling of energy storage for load serving entities in locational marginal pricing market|Coupon-Based Demand Response Considering Wind Power Uncertainty: A Strategic Bidding Model for Load Serving Entities|An approach to assess the responsive residential demand to financial incentives|The impact of FTR on LSE's strategic bidding considering coupon based demand response{% endcapture %}
@@ -82,13 +81,7 @@ author_profile: true
         {% for publication_title in optimization_titles %}
           {% assign post = site.publications | where: "title", publication_title | first %}
           {% if post %}
-            {% assign publication_number = 0 %}
-            {% for numbered_post in chronological_numbered_publications %}
-              {% if numbered_post.title == post.title %}
-                {% assign publication_number = forloop.index %}
-              {% endif %}
-            {% endfor %}
-            <li value="{{ publication_number }}">
+            <li>
               {% include publication-list-item.html post=post %}
             </li>
           {% endif %}
@@ -106,13 +99,7 @@ author_profile: true
         {% for publication_title in dynamics_titles %}
           {% assign post = site.publications | where: "title", publication_title | first %}
           {% if post %}
-            {% assign publication_number = 0 %}
-            {% for numbered_post in chronological_numbered_publications %}
-              {% if numbered_post.title == post.title %}
-                {% assign publication_number = forloop.index %}
-              {% endif %}
-            {% endfor %}
-            <li value="{{ publication_number }}">
+            <li>
               {% include publication-list-item.html post=post %}
             </li>
           {% endif %}
@@ -130,13 +117,7 @@ author_profile: true
         {% for publication_title in planning_titles %}
           {% assign post = site.publications | where: "title", publication_title | first %}
           {% if post %}
-            {% assign publication_number = 0 %}
-            {% for numbered_post in chronological_numbered_publications %}
-              {% if numbered_post.title == post.title %}
-                {% assign publication_number = forloop.index %}
-              {% endif %}
-            {% endfor %}
-            <li value="{{ publication_number }}">
+            <li>
               {% include publication-list-item.html post=post %}
             </li>
           {% endif %}
@@ -154,13 +135,7 @@ author_profile: true
         {% for publication_title in cosim_titles %}
           {% assign post = site.publications | where: "title", publication_title | first %}
           {% if post %}
-            {% assign publication_number = 0 %}
-            {% for numbered_post in chronological_numbered_publications %}
-              {% if numbered_post.title == post.title %}
-                {% assign publication_number = forloop.index %}
-              {% endif %}
-            {% endfor %}
-            <li value="{{ publication_number }}">
+            <li>
               {% include publication-list-item.html post=post %}
             </li>
           {% endif %}
@@ -178,13 +153,7 @@ author_profile: true
       <ol class="publication-numbered-list publication-focus-list">
         {% for post in chronological_publications %}
           {% if post.publication_type != "conference" %}
-            {% assign publication_number = 0 %}
-            {% for numbered_post in chronological_numbered_publications %}
-              {% if numbered_post.title == post.title %}
-                {% assign publication_number = forloop.index %}
-              {% endif %}
-            {% endfor %}
-            <li value="{{ publication_number }}">
+            <li>
               {% include publication-list-item.html post=post %}
             </li>
           {% endif %}
@@ -199,13 +168,7 @@ author_profile: true
       <ol class="publication-numbered-list publication-focus-list">
         {% for post in chronological_publications %}
           {% if post.publication_type == "conference" %}
-            {% assign publication_number = 0 %}
-            {% for numbered_post in chronological_numbered_publications %}
-              {% if numbered_post.title == post.title %}
-                {% assign publication_number = forloop.index %}
-              {% endif %}
-            {% endfor %}
-            <li value="{{ publication_number }}">
+            <li>
               {% include publication-list-item.html post=post %}
             </li>
           {% endif %}
