@@ -1,0 +1,33 @@
+{% include base_path %}
+
+{% assign pub = include.post %}
+{% assign title = pub.title | markdownify | remove: "<p>" | remove: "</p>" %}
+
+{% if pub.url contains "://" %}
+  {% assign pub_permalink = pub.url %}
+{% else %}
+  {% assign pub_permalink = pub.url | prepend: base_path %}
+{% endif %}
+
+<div class="publication-list-item">
+  <p class="publication-list-title">
+    {% if pub.paperurl %}
+      <a href="{{ pub.paperurl }}">{{ title }}</a>
+      <a href="{{ pub_permalink }}" rel="permalink"><i class="fa fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
+    {% else %}
+      <a href="{{ pub_permalink }}">{{ title }}</a>
+    {% endif %}
+  </p>
+  <p class="publication-list-meta">
+    Published in <em>{{ pub.venue | strip }}</em>, {{ pub.date | default: "1900-01-01" | date: "%Y" }}{% if pub.paperurl %} · <a href="{{ pub.paperurl }}">Journal link</a>{% endif %}
+  </p>
+  {% if pub.citation %}
+    <p class="publication-list-citation">
+      <strong>Recommended citation:</strong> {{ pub.citation }}{% if pub.paperurl %} <a href="{{ pub.paperurl }}">Journal link</a>{% endif %}
+    </p>
+  {% elsif pub.paperurl %}
+    <p class="publication-list-citation">
+      <a href="{{ pub.paperurl }}">Journal link</a>
+    </p>
+  {% endif %}
+</div>

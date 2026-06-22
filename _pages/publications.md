@@ -9,126 +9,138 @@ author_profile: true
   <div class="wordwrap">You can also find my full publication record on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
 {% endif %}
 
-## Citation-Ready Research Clusters
+{% assign chronological_publications = site.publications | sort: "date" | reverse %}
+{% capture optimization_titles %}Addressing Wind Power Forecast Errors in Day-Ahead Pricing With Energy Storage Systems: A Distributionally Robust Joint Chance-Constrained Approach|Stable Relay Learning Optimization Approach for Fast Power System Production Cost Minimization Simulation|On the Decomposition of Locational Marginal Hydrogen Pricing−Part II: Solution Approach and Numerical Results|Implications of electricity and gas price coupling in US New England region|DLMP of Competitive Markets in Active Distribution Networks: Models, Solutions, Applications, and Visions|How Can Probabilistic Solar Power Forecasts Be Used to Lower Costs and Improve Reliability in Power Spot Markets? A Review and Application to Flexiramp Requirements|Two-stage stochastic optimization frameworks to aid in decision-making under uncertainty for variable resource generators participating in a sequential energy market|Redesigning capacity market to include flexibility via ramp constraints in high-renewable penetrated system|State-of-the-art short-term electricity market operation with solar generation: A review|A clustering-based scenario generation framework for power market simulation with wind integration|Analytical Model of Day-ahead and Real-time Price Correlation in Strategic Wind Power Offering|Multi-Stage Stochastic Programming to Joint Economic Dispatch for Energy and Reserve With Uncertain Renewable Energy|Distributionally-robust chance constrained and interval optimization for integrated electricity and natural gas systems optimal power flow with wind uncertainties|Decentralized wind uncertainty management: Alternating direction method of multipliers based distributionally-robust chance constrained optimal power flow|Adjustable and distributionally robust chance-constrained economic dispatch considering wind power uncertainty|Coupon-Based Demand Response Considering Wind Power Uncertainty: A Strategic Bidding Model for Load Serving Entities|Introducing Uncertainty Components in Locational Marginal Prices for Pricing Wind Power and Load Uncertainties|Mean-Variance Optimization-Based Energy Storage Scheduling Considering Day-Ahead and Real-Time LMP Uncertainties|Bilevel Arbitrage Potential Evaluation for Grid-Scale Energy Storage Considering Wind Power and LMP Smoothing Effect|Strategic CBDR bidding considering FTR and wind power|Strategic scheduling of energy storage for load serving entities in locational marginal pricing market|Evaluation of LMP Intervals Considering Wind Uncertainty|Day-ahead coordinated operation of utility-scale electricity and natural gas networks considering demand response based virtual power plants|Hybrid component and configuration model for combined-cycle units in unit commitment problem|Deliverable Flexible Ramping Products Considering Spatiotemporal Correlation of Wind Generation and Demand Uncertainties|Modelling wind power spatial-temporal correlation in multi-interval optimal power flow: A sparse correlation matrix approach{% endcapture %}
+{% capture dynamics_titles %}Analytical Small-signal Stability Analysis of Low-Inertia Power System Frequency Response Considering Secondary Frequency Regulation|Multi-Timescale Modeling Framework of Hybrid Power Plants Providing Secondary Frequency Regulation|Frequency Security-Constrained Unit Commitment with Fast Frequency Support of DFIG-Based Wind Power Plants|Dynamics-incorporated Modeling Framework for Stability Constrained Scheduling Under High-penetration of Renewable Energy|Manage Real-Time Power Imbalance With Renewable Energy: Fast Generation Dispatch or Adaptive Frequency Regulation?|Secondary Frequency Regulation from Variable Generation Through Uncertainty Decomposition: An Economic and Reliability Perspective|Real-Time Dispatch With Secondary Frequency Regulation: A Pathway to Consider Intra-Interval Fluctuations|On Thermal Dynamics Embedded Static Voltage Stability Margin|Virtual Inertia Synthesis and Control: Informative and Relevant|Electric Vehicles Charging Time Constrained Deliverable Provision of Secondary Frequency Regulation{% endcapture %}
+{% capture planning_titles %}Frequency Nadir Constrained Unit Commitment for High Renewable Penetration Island Power Systems|DC Near-area Voltage Stability Constrained Renewable Energy Integration for Regional Power Grids|Reactive power planning under high penetration of wind energy using Benders decomposition|Available transfer capability evaluation in a deregulated electricity market considering correlated wind power|Energy Equity-Aware Load Shedding Optimization Methodology|Effective Parallelism for Equation and Jacobian Evaluation in Large-Scale Power Flow Calculation{% endcapture %}
+{% capture cosim_titles %}Transmission-and-Distribution Dynamic Co-Simulation Framework for Distributed Energy Resource Frequency Response|Demonstrating the transient system impact of cyber-physical events through scalable transmission and distribution (T&D) co-simulation|Distributed Optimization and Control for Autonomous Distributed Energy Resource Power Dispatch and Frequency Regulation Considering Communication Failures|Load altering attack-tolerant defense strategy for load frequency control system|A Framework of Residential Demand Aggregation With Financial Incentives{% endcapture %}
 
-<p class="publication-cluster-note">Selected papers are grouped by the lab's four research clusters. Each card links directly to the journal page and includes a citation-ready reference.</p>
+{% assign optimization_titles = optimization_titles | split: "|" %}
+{% assign dynamics_titles = dynamics_titles | split: "|" %}
+{% assign planning_titles = planning_titles | split: "|" %}
+{% assign cosim_titles = cosim_titles | split: "|" %}
 
-<div class="publication-cluster-list">
-  <section class="publication-cluster">
-    <div class="publication-cluster__summary">
-      <p class="publication-cluster__eyebrow">Cluster 1</p>
-      <h3>Optimization and Markets</h3>
-      <p>Optimization, electricity-market design, day-ahead and real-time operation, renewable uncertainty, and pricing methods for clean-energy systems.</p>
-    </div>
-    <div class="paper-card-grid" aria-label="Citation-ready papers in optimization and markets">
-      <article class="paper-card">
-        <h4><a href="https://ieeexplore.ieee.org/abstract/document/10461088">Addressing Wind Power Forecast Errors in Day-Ahead Pricing With Energy Storage Systems</a></h4>
-        <p class="paper-card__venue">IEEE Transactions on Sustainable Energy, 2024</p>
-        <p class="paper-card__citation"><strong>Citation:</strong> A. Zhou, M. Yang, X. Fang and Y. Zhang, "Addressing Wind Power Forecast Errors in Day-Ahead Pricing With Energy Storage Systems: A Distributionally Robust Joint Chance-Constrained Approach," in <em>IEEE Transactions on Sustainable Energy</em>, doi: 10.1109/TSTE.2024.3374212.</p>
-        <a class="btn btn--small paper-card__link" href="https://ieeexplore.ieee.org/abstract/document/10461088">Journal Page</a>
-      </article>
-      <article class="paper-card">
-        <h4><a href="https://ieeexplore.ieee.org/abstract/document/10694772">Stable Relay Learning Optimization Approach for Fast Power System Production Cost Minimization Simulation</a></h4>
-        <p class="paper-card__venue">IEEE Transactions on Power Systems, 2024</p>
-        <p class="paper-card__citation"><strong>Citation:</strong> Z. Guo, Q. Hu, C. Qu, T. Qian, X. Fang, R. Hu and Z. Wu, "Stable Relay Learning Optimization Approach for Fast Power System Production Cost Minimization Simulation," in <em>IEEE Transactions on Power Systems</em>.</p>
-        <a class="btn btn--small paper-card__link" href="https://ieeexplore.ieee.org/abstract/document/10694772">Journal Page</a>
-      </article>
-      <article class="paper-card">
-        <h4><a href="https://ieeexplore.ieee.org/document/10535046">On the Decomposition of Locational Marginal Hydrogen Pricing-Part II</a></h4>
-        <p class="paper-card__venue">IEEE Transactions on Industrial Informatics, 2024</p>
-        <p class="paper-card__citation"><strong>Citation:</strong> Q. An, G. Li, X. Fang, F. Li and J. Wang, "On the Decomposition of Locational Marginal Hydrogen Pricing-Part II: Solution Approach and Numerical Results," in <em>IEEE Transactions on Industrial Informatics</em>, doi: 10.1109/TII.2024.3393498.</p>
-        <a class="btn btn--small paper-card__link" href="https://ieeexplore.ieee.org/document/10535046">Journal Page</a>
-      </article>
-    </div>
-  </section>
-
-  <section class="publication-cluster">
-    <div class="publication-cluster__summary">
-      <p class="publication-cluster__eyebrow">Cluster 2</p>
-      <h3>Dynamics and Stability</h3>
-      <p>Frequency response, small-signal stability, fast frequency support, hybrid power plants, and inverter-based resource dynamics.</p>
-    </div>
-    <div class="paper-card-grid" aria-label="Citation-ready papers in dynamics and stability">
-      <article class="paper-card">
-        <h4><a href="https://www.sciencedirect.com/science/article/pii/S0378779626003184">Analytical Small-signal Stability Analysis of Low-Inertia Power System Frequency Response</a></h4>
-        <p class="paper-card__venue">Electric Power Systems Research, 2026</p>
-        <p class="paper-card__citation"><strong>Citation:</strong> Y. Deng, X. Fang, S. Dong, N. Gao and J. Tan, "Analytical Small-signal Stability Analysis of Low-Inertia Power System Frequency Response Considering Secondary Frequency Regulation," <em>Electric Power Systems Research</em>.</p>
-        <a class="btn btn--small paper-card__link" href="https://www.sciencedirect.com/science/article/pii/S0378779626003184">Journal Page</a>
-      </article>
-      <article class="paper-card">
-        <h4><a href="https://ieeexplore.ieee.org/abstract/document/10764748">Multi-Timescale Modeling Framework of Hybrid Power Plants Providing Secondary Frequency Regulation</a></h4>
-        <p class="paper-card__venue">IEEE Open Access Journal of Power and Energy, 2024</p>
-        <p class="paper-card__citation"><strong>Citation:</strong> Y. Deng, X. Fang, N. Gao and J. Tan, "Multi-Timescale Modeling Framework of Hybrid Power Plants Providing Secondary Frequency Regulation," in <em>IEEE Open Access Journal of Power and Energy</em>.</p>
-        <a class="btn btn--small paper-card__link" href="https://ieeexplore.ieee.org/abstract/document/10764748">Journal Page</a>
-      </article>
-      <article class="paper-card">
-        <h4><a href="https://www.sciencedirect.com/science/article/pii/S0142061524003405">Frequency Security-Constrained Unit Commitment with Fast Frequency Support of DFIG-Based Wind Power Plants</a></h4>
-        <p class="paper-card__venue">International Journal of Electrical Power and Energy Systems, 2024</p>
-        <p class="paper-card__citation"><strong>Citation:</strong> R. Han, Q. Hu, X. Fang, T. Qian and Y. Zhang, "Frequency Security-Constrained Unit Commitment with Fast Frequency Support of DFIG-Based Wind Power Plants," in <em>International Journal of Electrical Power and Energy Systems</em>.</p>
-        <a class="btn btn--small paper-card__link" href="https://www.sciencedirect.com/science/article/pii/S0142061524003405">Journal Page</a>
-      </article>
-    </div>
-  </section>
-
-  <section class="publication-cluster">
-    <div class="publication-cluster__summary">
-      <p class="publication-cluster__eyebrow">Cluster 3</p>
-      <h3>Grid Planning with Renewables</h3>
-      <p>Capacity expansion, transmission planning, resource adequacy, voltage stability, and renewable integration methods for future grids.</p>
-    </div>
-    <div class="paper-card-grid" aria-label="Citation-ready papers in grid planning with renewables">
-      <article class="paper-card">
-        <h4><a href="https://ieeexplore.ieee.org/abstract/document/10445517">Frequency Nadir Constrained Unit Commitment for High Renewable Penetration Island Power Systems</a></h4>
-        <p class="paper-card__venue">IEEE Open Access Journal of Power and Energy, 2024</p>
-        <p class="paper-card__citation"><strong>Citation:</strong> X. Liu, X. Fang, et al., "Frequency Nadir Constrained Unit Commitment for High Renewable Penetration Island Power Systems," in <em>IEEE Open Access Journal of Power and Energy</em>, vol. 11, pp. 141-153, 2024, doi: 10.1109/OAJPE.2024.3370504.</p>
-        <a class="btn btn--small paper-card__link" href="https://ieeexplore.ieee.org/abstract/document/10445517">Journal Page</a>
-      </article>
-      <article class="paper-card">
-        <h4><a href="https://ietresearch.onlinelibrary.wiley.com/doi/full/10.1049/gtd2.13254">DC Near-area Voltage Stability Constrained Renewable Energy Integration for Regional Power Grids</a></h4>
-        <p class="paper-card__venue">IET Generation, Transmission &amp; Distribution, 2024</p>
-        <p class="paper-card__citation"><strong>Citation:</strong> H. He, Y. Zhang, X. Fang and Q. Zhou, "DC Near-area Voltage Stability Constrained Renewable Energy Integration for Regional Power Grids," in <em>IET Generation, Transmission &amp; Distribution</em>.</p>
-        <a class="btn btn--small paper-card__link" href="https://ietresearch.onlinelibrary.wiley.com/doi/full/10.1049/gtd2.13254">Journal Page</a>
-      </article>
-      <article class="paper-card">
-        <h4><a href="https://ieeexplore.ieee.org/abstract/document/10002304">Manage Real-Time Power Imbalance With Renewable Energy</a></h4>
-        <p class="paper-card__venue">IEEE Transactions on Power Systems, 2023</p>
-        <p class="paper-card__citation"><strong>Citation:</strong> N. Gao, D. W. Gao and X. Fang, "Manage Real-Time Power Imbalance With Renewable Energy: Fast Generation Dispatch or Adaptive Frequency Regulation?," in <em>IEEE Transactions on Power Systems</em>, vol. 38, no. 6, pp. 5278-5289, Nov. 2023, doi: 10.1109/TPWRS.2022.3232759.</p>
-        <a class="btn btn--small paper-card__link" href="https://ieeexplore.ieee.org/abstract/document/10002304">Journal Page</a>
-      </article>
-    </div>
-  </section>
-
-  <section class="publication-cluster">
-    <div class="publication-cluster__summary">
-      <p class="publication-cluster__eyebrow">Cluster 4</p>
-      <h3>Cyber-Physical Co-Simulation</h3>
-      <p>Transmission-and-distribution co-simulation, distributed energy resource integration, communication-aware control, electric transportation, and scalable grid digital twins.</p>
-    </div>
-    <div class="paper-card-grid" aria-label="Citation-ready papers in cyber-physical co-simulation">
-      <article class="paper-card">
-        <h4><a href="https://ieeexplore.ieee.org/abstract/document/9569771">Transmission-and-Distribution Dynamic Co-Simulation Framework for DER Frequency Response</a></h4>
-        <p class="paper-card__venue">IEEE Transactions on Smart Grid, 2022</p>
-        <p class="paper-card__citation"><strong>Citation:</strong> W. Wang, X. Fang, H. Cui, F. Li, Y. Liu and T. J. Overbye, "Transmission-and-Distribution Dynamic Co-Simulation Framework for Distributed Energy Resource Frequency Response," in <em>IEEE Transactions on Smart Grid</em>, vol. 13, no. 1, pp. 482-495, Jan. 2022, doi: 10.1109/TSG.2021.3118292.</p>
-        <a class="btn btn--small paper-card__link" href="https://ieeexplore.ieee.org/abstract/document/9569771">Journal Page</a>
-      </article>
-      <article class="paper-card">
-        <h4><a href="https://ieeexplore.ieee.org/abstract/document/10376004">Demonstrating the Transient System Impact of Cyber-Physical Events Through Scalable T&amp;D Co-Simulation</a></h4>
-        <p class="paper-card__venue">CSEE Journal of Power and Energy Systems, 2023</p>
-        <p class="paper-card__citation"><strong>Citation:</strong> M. Cai, W. Wang, X. Fang, A. R. Florita, M. Ingram and D. Christensen, "Demonstrating the transient system impact of cyber-physical events through scalable transmission and distribution (T&amp;D) co-simulation," in <em>CSEE Journal of Power and Energy Systems</em>, doi: 10.17775/CSEEJPES.2023.01710.</p>
-        <a class="btn btn--small paper-card__link" href="https://ieeexplore.ieee.org/abstract/document/10376004">Journal Page</a>
-      </article>
-      <article class="paper-card">
-        <h4><a href="https://www.sciencedirect.com/science/article/pii/S2352467726000524">Distributed Optimization and Control for Autonomous DER Power Dispatch and Frequency Regulation</a></h4>
-        <p class="paper-card__venue">Sustainable Energy, Grids and Networks, 2026</p>
-        <p class="paper-card__citation"><strong>Citation:</strong> P. Basnet, X. Fang, W. Wang and W. Liu, "Distributed Optimization and Control for Autonomous Distributed Energy Resource Power Dispatch and Frequency Regulation Considering Communication Failures," <em>Sustainable Energy, Grids and Networks</em>.</p>
-        <a class="btn btn--small paper-card__link" href="https://www.sciencedirect.com/science/article/pii/S2352467726000524">Journal Page</a>
-      </article>
-    </div>
-  </section>
+<div class="publication-view-toggle" aria-label="Publication list view">
+  <button class="btn btn--primary" type="button" aria-pressed="true" aria-controls="publication-view-chronological" data-publication-view-button="publication-view-chronological">Chronological</button>
+  <button class="btn" type="button" aria-pressed="false" aria-controls="publication-view-focus" data-publication-view-button="publication-view-focus">By Research Focus</button>
 </div>
 
-{% include base_path %}
+<section id="publication-view-chronological" class="publication-view" data-publication-view>
+  <h2>Chronological</h2>
+  <ol class="publication-numbered-list">
+    {% for post in chronological_publications %}
+      <li>
+        {% include publication-list-item.html post=post %}
+      </li>
+    {% endfor %}
+  </ol>
+</section>
 
-{% for post in site.publications reversed %}
-  {% include archive-single.html %}
-{% endfor %}
+<section id="publication-view-focus" class="publication-view" data-publication-view hidden>
+  <h2>By Research Focus</h2>
+  {% assign focus_number = 0 %}
+  <div class="publication-cluster-list">
+    <section class="publication-cluster">
+      <div class="publication-cluster__summary">
+        <p class="publication-cluster__eyebrow">Cluster 1</p>
+        <h3>Optimization and Markets</h3>
+        <p>Optimization, electricity-market design, day-ahead and real-time operation, renewable uncertainty, and pricing methods for clean-energy systems.</p>
+      </div>
+      <ol class="publication-numbered-list publication-focus-list">
+        {% for publication_title in optimization_titles %}
+          {% assign post = site.publications | where: "title", publication_title | first %}
+          {% if post %}
+            {% assign focus_number = focus_number | plus: 1 %}
+            <li value="{{ focus_number }}">
+              {% include publication-list-item.html post=post %}
+            </li>
+          {% endif %}
+        {% endfor %}
+      </ol>
+    </section>
+
+    <section class="publication-cluster">
+      <div class="publication-cluster__summary">
+        <p class="publication-cluster__eyebrow">Cluster 2</p>
+        <h3>Dynamics and Stability</h3>
+        <p>Frequency response, small-signal stability, fast frequency support, hybrid power plants, and inverter-based resource dynamics.</p>
+      </div>
+      <ol class="publication-numbered-list publication-focus-list">
+        {% for publication_title in dynamics_titles %}
+          {% assign post = site.publications | where: "title", publication_title | first %}
+          {% if post %}
+            {% assign focus_number = focus_number | plus: 1 %}
+            <li value="{{ focus_number }}">
+              {% include publication-list-item.html post=post %}
+            </li>
+          {% endif %}
+        {% endfor %}
+      </ol>
+    </section>
+
+    <section class="publication-cluster">
+      <div class="publication-cluster__summary">
+        <p class="publication-cluster__eyebrow">Cluster 3</p>
+        <h3>Grid Planning with Renewables</h3>
+        <p>Capacity expansion, transmission planning, resource adequacy, voltage stability, renewable integration, and scalable grid-computation methods.</p>
+      </div>
+      <ol class="publication-numbered-list publication-focus-list">
+        {% for publication_title in planning_titles %}
+          {% assign post = site.publications | where: "title", publication_title | first %}
+          {% if post %}
+            {% assign focus_number = focus_number | plus: 1 %}
+            <li value="{{ focus_number }}">
+              {% include publication-list-item.html post=post %}
+            </li>
+          {% endif %}
+        {% endfor %}
+      </ol>
+    </section>
+
+    <section class="publication-cluster">
+      <div class="publication-cluster__summary">
+        <p class="publication-cluster__eyebrow">Cluster 4</p>
+        <h3>Cyber-Physical Co-Simulation</h3>
+        <p>Transmission-and-distribution co-simulation, distributed energy resource integration, communication-aware control, and scalable grid digital twins.</p>
+      </div>
+      <ol class="publication-numbered-list publication-focus-list">
+        {% for publication_title in cosim_titles %}
+          {% assign post = site.publications | where: "title", publication_title | first %}
+          {% if post %}
+            {% assign focus_number = focus_number | plus: 1 %}
+            <li value="{{ focus_number }}">
+              {% include publication-list-item.html post=post %}
+            </li>
+          {% endif %}
+        {% endfor %}
+      </ol>
+    </section>
+  </div>
+</section>
+
+<script>
+  (function () {
+    var buttons = document.querySelectorAll("[data-publication-view-button]");
+    var views = document.querySelectorAll("[data-publication-view]");
+
+    if (!buttons.length || !views.length) {
+      return;
+    }
+
+    buttons.forEach(function (button) {
+      button.addEventListener("click", function () {
+        var target = button.getAttribute("data-publication-view-button");
+
+        buttons.forEach(function (candidate) {
+          var active = candidate === button;
+          candidate.setAttribute("aria-pressed", active ? "true" : "false");
+          candidate.classList.toggle("btn--primary", active);
+        });
+
+        views.forEach(function (view) {
+          view.hidden = view.id !== target;
+        });
+      });
+    });
+  })();
+</script>
