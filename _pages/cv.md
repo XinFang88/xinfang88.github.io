@@ -58,7 +58,7 @@ Teaching
 AWARDS AND HONORS
 ======
 * Best Paper Award, IEEE Open Access Journal of Power and Energy, 2025, for "[Frequency Nadir Constrained Unit Commitment for High Renewable Penetration Island Power Systems](https://ieeexplore.ieee.org/abstract/document/10445517)," selected as [one of two best papers in the IEEE Open Access Journal of Power and Energy in 2025](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=11355900&_gl=1*1k8sk0u*_gcl_au*ODMzODU0NzM5LjE3NzgxNzQ1ODY).
-* IEEE PES PSOPE Technical Committee Prize Paper Award, 2024
+* IEEE PES PSOPE Technical Committee Prize Paper Award, 2024, for "[Transmission-and-Distribution Dynamic Co-Simulation Framework for Distributed Energy Resource Frequency Response](https://ieeexplore.ieee.org/abstract/document/9569771)," published in IEEE Transactions on Smart Grid.
 * Outstanding Associate Editor for IEEE Transactions on Power Systems, 2023
 * Outstanding Associate Editor for IEEE Transactions on Sustainable Energy, 2022
 * Best Journal Paper Award of Journal of Modern Power Systems and Clean Energy, 2019
