@@ -398,3 +398,77 @@
     margin: 1em auto 1.5em;
   }
 }
+
+/* Publication switch controls
+   ========================================================================== */
+
+.publication-view-toggle .btn,
+.publication-subview-toggle .btn {
+  background-color: #f6f8fb !important;
+  color: $primary-color !important;
+  border: 1px solid mix(#fff, $primary-color, 68%) !important;
+}
+
+.publication-view-toggle .btn:hover,
+.publication-subview-toggle .btn:hover {
+  background-color: mix(#fff, $primary-color, 88%) !important;
+  color: mix(#000, $primary-color, 15%) !important;
+}
+
+#publication-view-focus .publication-cluster__summary {
+  display: none !important;
+}
+
+#publication-option-chronological:checked ~ .publication-view-toggle label[for="publication-option-chronological"] {
+  background-color: $primary-color !important;
+  color: #fff !important;
+  border-color: transparent !important;
+}
+
+#publication-option-focus:checked ~ .publication-view-toggle label[for="publication-option-focus"] {
+  background-color: #2f7d65 !important;
+  color: #fff !important;
+  border-color: transparent !important;
+}
+
+#publication-option-type:checked ~ .publication-view-toggle label[for="publication-option-type"] {
+  background-color: #735f9e !important;
+  color: #fff !important;
+  border-color: transparent !important;
+}
+
+#publication-focus-optimization:checked ~ .publication-subview-toggle label[for="publication-focus-optimization"] {
+  background-color: #2f6f9f !important;
+  color: #fff !important;
+  border-color: transparent !important;
+}
+
+#publication-focus-dynamics:checked ~ .publication-subview-toggle label[for="publication-focus-dynamics"] {
+  background-color: #9a5b5f !important;
+  color: #fff !important;
+  border-color: transparent !important;
+}
+
+#publication-focus-planning:checked ~ .publication-subview-toggle label[for="publication-focus-planning"] {
+  background-color: #4f7a35 !important;
+  color: #fff !important;
+  border-color: transparent !important;
+}
+
+#publication-focus-cosim:checked ~ .publication-subview-toggle label[for="publication-focus-cosim"] {
+  background-color: #6f5f9d !important;
+  color: #fff !important;
+  border-color: transparent !important;
+}
+
+#publication-type-journal:checked ~ .publication-subview-toggle label[for="publication-type-journal"] {
+  background-color: #236f74 !important;
+  color: #fff !important;
+  border-color: transparent !important;
+}
+
+#publication-type-conference:checked ~ .publication-subview-toggle label[for="publication-type-conference"] {
+  background-color: #8a6335 !important;
+  color: #fff !important;
+  border-color: transparent !important;
+}
