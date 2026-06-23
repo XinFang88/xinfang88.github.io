@@ -7,3 +7,5 @@ Sponsor: DOE/WETO
 Funding: "Fang's share: $112,500,  Total: $700,000"
 date: 2024-05-01 to 2027-04-30
 ---
+
+Training module: [HVDC-Learn Module 1c](https://home.engineering.iastate.edu/~jdm/hvdclearn/AllYear1Modules/Module-1c.pdf)
