@@ -9,6 +9,10 @@ redirect_from:
 
 {% include base_path %}
 
+<p>
+  <a class="btn" href="{{ base_path }}/assets/files/Xin_Fang_CV.pdf">View full CV with complete publication list (PDF)</a>
+</p>
+
 Education
 ======
 * Ph.D in Electrical Engineering, University of Tennessee, Knoxville, 2016
@@ -38,7 +42,9 @@ Current Research Projects
 Selected Journal Publications
 ======
   <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
+    {% if post.publication_type != "conference" %}
+      {% include archive-single-cv.html %}
+    {% endif %}
   {% endfor %}</ul>
 
   
