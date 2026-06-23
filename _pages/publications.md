@@ -76,6 +76,42 @@ author_profile: true
   background-color: #3b5f88;
   color: #fff;
 }
+#publication-option-chronological:checked ~ .publication-view-toggle label[for="publication-option-chronological"] {
+  background-color: #3b5f88;
+}
+
+#publication-option-focus:checked ~ .publication-view-toggle label[for="publication-option-focus"] {
+  background-color: #2f7d65;
+}
+
+#publication-option-type:checked ~ .publication-view-toggle label[for="publication-option-type"] {
+  background-color: #735f9e;
+}
+
+#publication-focus-optimization:checked ~ .publication-subview-toggle label[for="publication-focus-optimization"] {
+  background-color: #2f6f9f;
+}
+
+#publication-focus-dynamics:checked ~ .publication-subview-toggle label[for="publication-focus-dynamics"] {
+  background-color: #9a5b5f;
+}
+
+#publication-focus-planning:checked ~ .publication-subview-toggle label[for="publication-focus-planning"] {
+  background-color: #4f7a35;
+}
+
+#publication-focus-cosim:checked ~ .publication-subview-toggle label[for="publication-focus-cosim"] {
+  background-color: #6f5f9d;
+}
+
+#publication-type-journal:checked ~ .publication-subview-toggle label[for="publication-type-journal"] {
+  background-color: #236f74;
+}
+
+#publication-type-conference:checked ~ .publication-subview-toggle label[for="publication-type-conference"] {
+  background-color: #8a6335;
+}
+
 
 </style>
 
@@ -115,11 +151,6 @@ author_profile: true
 
   <div class="publication-cluster-list">
     <section id="publication-focus-optimization-view" class="publication-cluster publication-subview">
-      <div class="publication-cluster__summary">
-        <p class="publication-cluster__eyebrow">Cluster 1</p>
-        <h3>Optimization and Markets</h3>
-        <p>Optimization, electricity-market design, day-ahead and real-time operation, renewable uncertainty, and pricing methods for clean-energy systems.</p>
-      </div>
       <ol class="publication-numbered-list publication-focus-list">
         {% for publication_title in optimization_titles %}
           {% assign post = site.publications | where: "title", publication_title | first %}
@@ -133,11 +164,6 @@ author_profile: true
     </section>
 
     <section id="publication-focus-dynamics-view" class="publication-cluster publication-subview">
-      <div class="publication-cluster__summary">
-        <p class="publication-cluster__eyebrow">Cluster 2</p>
-        <h3>Dynamics and Stability</h3>
-        <p>Frequency response, small-signal stability, fast frequency support, hybrid power plants, and inverter-based resource dynamics.</p>
-      </div>
       <ol class="publication-numbered-list publication-focus-list">
         {% for publication_title in dynamics_titles %}
           {% assign post = site.publications | where: "title", publication_title | first %}
@@ -151,11 +177,6 @@ author_profile: true
     </section>
 
     <section id="publication-focus-planning-view" class="publication-cluster publication-subview">
-      <div class="publication-cluster__summary">
-        <p class="publication-cluster__eyebrow">Cluster 3</p>
-        <h3>Grid Planning with Renewables</h3>
-        <p>Capacity expansion, transmission planning, resource adequacy, voltage stability, renewable integration, and scalable grid-computation methods.</p>
-      </div>
       <ol class="publication-numbered-list publication-focus-list">
         {% for publication_title in planning_titles %}
           {% assign post = site.publications | where: "title", publication_title | first %}
@@ -169,11 +190,6 @@ author_profile: true
     </section>
 
     <section id="publication-focus-cosim-view" class="publication-cluster publication-subview">
-      <div class="publication-cluster__summary">
-        <p class="publication-cluster__eyebrow">Cluster 4</p>
-        <h3>Cyber-Physical Co-Simulation</h3>
-        <p>Transmission-and-distribution co-simulation, distributed energy resource integration, communication-aware control, and scalable grid digital twins.</p>
-      </div>
       <ol class="publication-numbered-list publication-focus-list">
         {% for publication_title in cosim_titles %}
           {% assign post = site.publications | where: "title", publication_title | first %}
