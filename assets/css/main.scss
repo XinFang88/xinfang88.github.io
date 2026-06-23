@@ -154,7 +154,39 @@
   color: #fff;
 }
 
-.publication-view-toggle {
+.publication-subview-radio {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  opacity: 0;
+}
+
+.publication-switcher .publication-subview {
+  display: none;
+}
+
+#publication-focus-optimization:checked ~ .publication-cluster-list #publication-focus-optimization-view,
+#publication-focus-dynamics:checked ~ .publication-cluster-list #publication-focus-dynamics-view,
+#publication-focus-planning:checked ~ .publication-cluster-list #publication-focus-planning-view,
+#publication-focus-cosim:checked ~ .publication-cluster-list #publication-focus-cosim-view,
+#publication-type-journal:checked ~ .publication-cluster-list #publication-type-journal-view,
+#publication-type-conference:checked ~ .publication-cluster-list #publication-type-conference-view {
+  display: block;
+}
+
+#publication-focus-optimization:checked ~ .publication-subview-toggle label[for="publication-focus-optimization"],
+#publication-focus-dynamics:checked ~ .publication-subview-toggle label[for="publication-focus-dynamics"],
+#publication-focus-planning:checked ~ .publication-subview-toggle label[for="publication-focus-planning"],
+#publication-focus-cosim:checked ~ .publication-subview-toggle label[for="publication-focus-cosim"],
+#publication-type-journal:checked ~ .publication-subview-toggle label[for="publication-type-journal"],
+#publication-type-conference:checked ~ .publication-subview-toggle label[for="publication-type-conference"] {
+  background-color: $primary-color;
+  color: #fff;
+}
+
+.publication-view-toggle,
+.publication-subview-toggle {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
@@ -164,6 +196,15 @@
     margin: 0;
     cursor: pointer;
     text-decoration: none;
+  }
+}
+
+.publication-subview-toggle {
+  margin-top: -0.25em;
+
+  .btn {
+    padding: 0.45em 0.85em;
+    font-size: $type-size-6;
   }
 }
 
@@ -186,6 +227,11 @@
     font-size: $type-size-4;
     line-height: 1.2;
   }
+}
+
+.publication-cluster.publication-subview {
+  padding-top: 0;
+  border-top: 0;
 }
 
 .publication-cluster__summary {

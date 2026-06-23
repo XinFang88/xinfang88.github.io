@@ -46,6 +46,37 @@ author_profile: true
     background-color: #3b5f88;
     color: #fff;
   }
+.publication-subview-radio {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  opacity: 0;
+}
+
+.publication-switcher .publication-subview {
+  display: none;
+}
+
+#publication-focus-optimization:checked ~ .publication-cluster-list #publication-focus-optimization-view,
+#publication-focus-dynamics:checked ~ .publication-cluster-list #publication-focus-dynamics-view,
+#publication-focus-planning:checked ~ .publication-cluster-list #publication-focus-planning-view,
+#publication-focus-cosim:checked ~ .publication-cluster-list #publication-focus-cosim-view,
+#publication-type-journal:checked ~ .publication-cluster-list #publication-type-journal-view,
+#publication-type-conference:checked ~ .publication-cluster-list #publication-type-conference-view {
+  display: block;
+}
+
+#publication-focus-optimization:checked ~ .publication-subview-toggle label[for="publication-focus-optimization"],
+#publication-focus-dynamics:checked ~ .publication-subview-toggle label[for="publication-focus-dynamics"],
+#publication-focus-planning:checked ~ .publication-subview-toggle label[for="publication-focus-planning"],
+#publication-focus-cosim:checked ~ .publication-subview-toggle label[for="publication-focus-cosim"],
+#publication-type-journal:checked ~ .publication-subview-toggle label[for="publication-type-journal"],
+#publication-type-conference:checked ~ .publication-subview-toggle label[for="publication-type-conference"] {
+  background-color: #3b5f88;
+  color: #fff;
+}
+
 </style>
 
 <div class="publication-switcher">
@@ -70,8 +101,20 @@ author_profile: true
 </section>
 
 <section id="publication-view-focus" class="publication-view publication-view--focus">
+  <input class="publication-subview-radio" type="radio" name="publication-focus-option" id="publication-focus-optimization" checked>
+  <input class="publication-subview-radio" type="radio" name="publication-focus-option" id="publication-focus-dynamics">
+  <input class="publication-subview-radio" type="radio" name="publication-focus-option" id="publication-focus-planning">
+  <input class="publication-subview-radio" type="radio" name="publication-focus-option" id="publication-focus-cosim">
+
+  <div class="publication-subview-toggle" aria-label="Research focus list">
+    <label class="btn" for="publication-focus-optimization">Optimization and Markets</label>
+    <label class="btn" for="publication-focus-dynamics">Dynamics and Stability</label>
+    <label class="btn" for="publication-focus-planning">Grid Planning with Renewables</label>
+    <label class="btn" for="publication-focus-cosim">Cyber-Physical Co-Simulation</label>
+  </div>
+
   <div class="publication-cluster-list">
-    <section class="publication-cluster">
+    <section id="publication-focus-optimization-view" class="publication-cluster publication-subview">
       <div class="publication-cluster__summary">
         <p class="publication-cluster__eyebrow">Cluster 1</p>
         <h3>Optimization and Markets</h3>
@@ -89,7 +132,7 @@ author_profile: true
       </ol>
     </section>
 
-    <section class="publication-cluster">
+    <section id="publication-focus-dynamics-view" class="publication-cluster publication-subview">
       <div class="publication-cluster__summary">
         <p class="publication-cluster__eyebrow">Cluster 2</p>
         <h3>Dynamics and Stability</h3>
@@ -107,7 +150,7 @@ author_profile: true
       </ol>
     </section>
 
-    <section class="publication-cluster">
+    <section id="publication-focus-planning-view" class="publication-cluster publication-subview">
       <div class="publication-cluster__summary">
         <p class="publication-cluster__eyebrow">Cluster 3</p>
         <h3>Grid Planning with Renewables</h3>
@@ -125,7 +168,7 @@ author_profile: true
       </ol>
     </section>
 
-    <section class="publication-cluster">
+    <section id="publication-focus-cosim-view" class="publication-cluster publication-subview">
       <div class="publication-cluster__summary">
         <p class="publication-cluster__eyebrow">Cluster 4</p>
         <h3>Cyber-Physical Co-Simulation</h3>
@@ -145,8 +188,16 @@ author_profile: true
   </div>
 </section>
 <section id="publication-view-type" class="publication-view publication-view--type">
+  <input class="publication-subview-radio" type="radio" name="publication-type-option" id="publication-type-journal" checked>
+  <input class="publication-subview-radio" type="radio" name="publication-type-option" id="publication-type-conference">
+
+  <div class="publication-subview-toggle" aria-label="Publication type list">
+    <label class="btn" for="publication-type-journal">Journal Papers</label>
+    <label class="btn" for="publication-type-conference">Conference Papers</label>
+  </div>
+
   <div class="publication-cluster-list">
-    <section class="publication-cluster">
+    <section id="publication-type-journal-view" class="publication-cluster publication-subview">
       <div class="publication-cluster__summary">
         <h3>Journal Papers</h3>
       </div>
@@ -161,7 +212,7 @@ author_profile: true
       </ol>
     </section>
 
-    <section class="publication-cluster">
+    <section id="publication-type-conference-view" class="publication-cluster publication-subview">
       <div class="publication-cluster__summary">
         <h3>Conference Papers</h3>
       </div>
