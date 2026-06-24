@@ -285,9 +285,6 @@ author_profile: true
 
   <div class="publication-cluster-list">
     <section id="publication-type-journal-view" class="publication-cluster publication-subview">
-      <div class="publication-cluster__summary">
-        <h3>Journal Papers</h3>
-      </div>
       <ol class="publication-numbered-list publication-focus-list">
         {% for post in chronological_publications %}
           {% if post.publication_type != "conference" %}
@@ -300,9 +297,6 @@ author_profile: true
     </section>
 
     <section id="publication-type-conference-view" class="publication-cluster publication-subview">
-      <div class="publication-cluster__summary">
-        <h3>Conference Papers</h3>
-      </div>
       <ol class="publication-numbered-list publication-focus-list">
         {% for post in chronological_publications %}
           {% if post.publication_type == "conference" %}
