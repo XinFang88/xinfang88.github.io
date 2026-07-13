@@ -9,3 +9,5 @@ date: 2024-01-01 to 2025-12-31
 ---
 
 Training platform: [PowerCyber Training](https://powerct.eecps.com/intro.html)
+
+NSF award page: [Award #2603374](https://www.nsf.gov/awardsearch/show-award?AWD_ID=2603374)
