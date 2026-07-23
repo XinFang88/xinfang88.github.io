@@ -14,9 +14,12 @@ gem "github-pages", group: :jekyll_plugins
 # If you want to use Jekyll native, uncomment the line below.
 # To upgrade, run `bundle update`.
 
-# gem "jekyll"
+gem "jekyll", "~> 3.9.5"
 
 gem "wdm", "~> 0.1.0" if Gem.win_platform?
+
+# Keep local builds compatible with macOS system Ruby 2.6.
+gem "ffi", "~> 1.16.3"
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do

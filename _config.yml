@@ -14,7 +14,7 @@ name                     : &name "Xin Fang"
 description              : &description "Power systems, grid dynamics, optimization, and intelligent decarbonization at the University of South Carolina."
 URL                      : "https://xinfang88.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "https://github.com/XinFang88/xinfang88.github.io"
+repository               : "XinFang88/xinfang88.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
