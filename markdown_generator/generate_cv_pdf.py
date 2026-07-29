@@ -29,15 +29,22 @@ from reportlab.platypus import (
 )
 
 
-CHARCOAL = colors.HexColor("#27343B")
-TEAL = colors.HexColor("#176C69")
-BLUE = colors.HexColor("#315B7D")
-GOLD = colors.HexColor("#A87312")
-GREEN = colors.HexColor("#477247")
-PLUM = colors.HexColor("#6A527D")
-MUTED = colors.HexColor("#5D686E")
-LIGHT = colors.HexColor("#EEF3F2")
-LINE = colors.HexColor("#D7DFDF")
+CHARCOAL = colors.HexColor("#24323D")
+TEAL = colors.HexColor("#0D766E")
+BLUE = colors.HexColor("#2D5578")
+GOLD = colors.HexColor("#B47A22")
+GREEN = colors.HexColor("#4F7655")
+PLUM = colors.HexColor("#735B7D")
+CORAL = colors.HexColor("#A55E58")
+MUTED = colors.HexColor("#58656E")
+LIGHT = colors.HexColor("#F1F6F5")
+LINE = colors.HexColor("#CFDAD8")
+SOFT_BLUE = colors.HexColor("#EDF3F8")
+SOFT_TEAL = colors.HexColor("#EAF5F3")
+SOFT_GOLD = colors.HexColor("#FBF4E8")
+SOFT_GREEN = colors.HexColor("#EEF5EE")
+SOFT_PLUM = colors.HexColor("#F4EFF7")
+SOFT_CORAL = colors.HexColor("#F8EEEE")
 WHITE = colors.white
 
 
@@ -161,7 +168,7 @@ def highlighted_citation(record: dict[str, str], year: str) -> str:
     if link:
         rendered += (
             f' <link href="{html.escape(link, quote=True)}">'
-            f'<font color="#176C69">[paper]</font></link>'
+            f'<font color="#0D766E">[paper]</font></link>'
         )
     return rendered
 
@@ -342,7 +349,7 @@ def two_col_entries(
     def cell(title: str, detail: str) -> Paragraph:
         return rich(
             f"<b>{html.escape(clean_text(title))}</b><br/>"
-            f'<font color="#5D686E">{html.escape(clean_text(detail))}</font>',
+            f'<font color="#58656E">{html.escape(clean_text(detail))}</font>',
             styles["body_small"],
         )
 
@@ -429,16 +436,16 @@ def build_pdf(repo_root: Path, output_path: Path) -> None:
         )
     )
     contact = (
-        '<link href="mailto:fangxin@sc.edu"><font color="#176C69">fangxin@sc.edu</font></link>'
+        '<link href="mailto:fangxin@sc.edu"><font color="#0D766E">fangxin@sc.edu</font></link>'
         " | Columbia, South Carolina | "
-        '<link href="https://xinfang88.github.io"><font color="#176C69">xinfang88.github.io</font></link>'
+        '<link href="https://xinfang88.github.io"><font color="#0D766E">xinfang88.github.io</font></link>'
         "<br/>"
         '<link href="https://scholar.google.com/citations?user=lr3EP0AAAAAJ">'
-        '<font color="#176C69">Google Scholar</font></link> | '
+        '<font color="#0D766E">Google Scholar</font></link> | '
         '<link href="https://orcid.org/0000-0002-7979-803X">'
-        '<font color="#176C69">ORCID 0000-0002-7979-803X</font></link> | '
+        '<font color="#0D766E">ORCID 0000-0002-7979-803X</font></link> | '
         '<link href="https://www.linkedin.com/in/xin-fang-82b90646/">'
-        '<font color="#176C69">LinkedIn</font></link>'
+        '<font color="#0D766E">LinkedIn</font></link>'
     )
     story.append(Paragraph(contact, styles["contact"]))
     story.append(Spacer(1, 6))
@@ -467,6 +474,10 @@ def build_pdf(repo_root: Path, output_path: Path) -> None:
         TableStyle(
             [
                 ("BACKGROUND", (0, 0), (-1, -1), LIGHT),
+                ("BACKGROUND", (0, 0), (0, 0), SOFT_BLUE),
+                ("BACKGROUND", (1, 0), (1, 0), SOFT_TEAL),
+                ("BACKGROUND", (2, 0), (2, 0), SOFT_GOLD),
+                ("BACKGROUND", (3, 0), (3, 0), SOFT_PLUM),
                 ("BOX", (0, 0), (-1, -1), 0.5, LINE),
                 ("INNERGRID", (0, 0), (-1, -1), 0.5, WHITE),
                 ("VALIGN", (0, 0), (-1, -1), "MIDDLE"),
@@ -482,21 +493,22 @@ def build_pdf(repo_root: Path, output_path: Path) -> None:
     story.extend(section_heading("Academic Profile", styles))
     story.append(
         p(
-            "Power-system researcher and educator developing optimization, dynamics, grid-planning, "
-            "and cyber-physical modeling methods for reliable, affordable, renewable-rich electricity "
-            "systems. Research connects rigorous theory with deployable planning and operational tools "
-            "for inverter-based resources, electricity markets, grid resilience, and digital twins.",
+            "Power-system researcher and educator developing optimization, dynamics, physics-informed "
+            "and data-driven AI, grid-planning, and cyber-physical modeling methods for reliable, "
+            "affordable, renewable-rich electricity systems. Research connects rigorous theory with "
+            "deployable planning and operational tools for inverter-based resources, electricity "
+            "markets, grid resilience, and digital twins.",
             styles["body"],
         )
     )
     focus_data = [
         [
-            rich("<b>Optimization and Markets</b><br/>Dispatch, pricing, robust optimization, and market design", styles["body_small"]),
-            rich("<b>Dynamics and Stability</b><br/>Frequency response, grid-forming resources, and dynamics-informed scheduling", styles["body_small"]),
+            rich("<b>Optimization and Markets</b><br/>Learning-assisted dispatch, pricing, robust optimization, and market design", styles["body_small"]),
+            rich("<b>Dynamics and Stability</b><br/>ML stability assessment, grid-forming resources, and dynamics-informed scheduling", styles["body_small"]),
         ],
         [
             rich("<b>Grid Planning with Renewables</b><br/>Capacity expansion, reliability, resilience, and resource adequacy", styles["body_small"]),
-            rich("<b>Cyber-Physical Co-Simulation</b><br/>T&amp;D co-simulation, digital twins, DERs, and electric transportation", styles["body_small"]),
+            rich("<b>Cyber-Physical Co-Simulation</b><br/>AI-enabled analytics, digital twins, DERs, and electric transportation", styles["body_small"]),
         ],
     ]
     focus_table = Table(focus_data, colWidths=[3.45 * inch, 3.45 * inch], hAlign="LEFT")
@@ -506,7 +518,10 @@ def build_pdf(repo_root: Path, output_path: Path) -> None:
                 ("VALIGN", (0, 0), (-1, -1), "TOP"),
                 ("BOX", (0, 0), (-1, -1), 0.5, LINE),
                 ("INNERGRID", (0, 0), (-1, -1), 0.5, LINE),
-                ("BACKGROUND", (0, 0), (-1, -1), colors.HexColor("#FAFCFC")),
+                ("BACKGROUND", (0, 0), (0, 0), SOFT_BLUE),
+                ("BACKGROUND", (1, 0), (1, 0), SOFT_CORAL),
+                ("BACKGROUND", (0, 1), (0, 1), SOFT_GREEN),
+                ("BACKGROUND", (1, 1), (1, 1), SOFT_PLUM),
                 ("LEFTPADDING", (0, 0), (-1, -1), 7),
                 ("RIGHTPADDING", (0, 0), (-1, -1), 7),
                 ("TOPPADDING", (0, 0), (-1, -1), 5),

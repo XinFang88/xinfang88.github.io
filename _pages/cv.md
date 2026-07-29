@@ -23,7 +23,7 @@ redirect_from:
   <p class="cv-eyebrow">Academic Curriculum Vitae</p>
   <h2>Xin Fang, Ph.D.</h2>
   <p class="cv-hero__role">Assistant Professor of Electrical Engineering · Director, IDEAL Lab · University of South Carolina</p>
-  <p class="cv-hero__summary">Power-system researcher and educator developing optimization, dynamics, grid-planning, and cyber-physical modeling methods for reliable, affordable, renewable-rich electricity systems.</p>
+  <p class="cv-hero__summary">Power-system researcher and educator developing optimization, dynamics, physics-informed and data-driven AI, grid-planning, and cyber-physical modeling methods for reliable, affordable, renewable-rich electricity systems.</p>
   <div class="cv-actions">
     <a class="btn btn--primary" href="{{ '/assets/files/Xin_Fang_CV.pdf' | relative_url }}"><i class="fas fa-file-pdf" aria-hidden="true"></i> Full CV (PDF)</a>
     <a class="btn" href="mailto:fangxin@sc.edu"><i class="fas fa-envelope" aria-hidden="true"></i> Email</a>
@@ -60,7 +60,7 @@ redirect_from:
     </div>
     <div class="cv-focus cv-focus--dynamics">
       <h3>Dynamics and Stability</h3>
-      <p>Frequency response, small-signal stability, grid-forming resources, virtual inertia, and dynamics-informed scheduling.</p>
+      <p>Frequency response, small-signal stability, machine-learning-assisted stability assessment, grid-forming resources, virtual inertia, and dynamics-informed scheduling.</p>
     </div>
     <div class="cv-focus cv-focus--planning">
       <h3>Grid Planning with Renewables</h3>
@@ -68,7 +68,7 @@ redirect_from:
     </div>
     <div class="cv-focus cv-focus--cosim">
       <h3>Cyber-Physical Co-Simulation</h3>
-      <p>Transmission-distribution co-simulation, grid digital twins, distributed energy resources, and electric transportation.</p>
+      <p>Transmission-distribution co-simulation, AI-enabled grid analytics, grid digital twins, distributed energy resources, and electric transportation.</p>
     </div>
   </div>
 </section>

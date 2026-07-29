@@ -10,7 +10,7 @@ redirect_from:
 <section class="home-hero">
   <p class="home-kicker">Intelligent Decarbonization for Energy Access and Reliability</p>
   <h2>Grid intelligence for reliable, affordable clean electricity.</h2>
-  <p>The IDEAL Lab develops optimization, dynamics, and cyber-physical modeling methods for renewable-rich power systems. Led by Dr. Xin Fang at the University of South Carolina, the lab connects rigorous power-system theory with practical tools for planning, operating, and securing the future electric grid.</p>
+  <p>The IDEAL Lab develops optimization, trustworthy artificial intelligence, dynamics, and cyber-physical modeling methods for renewable-rich power systems. Led by Dr. Xin Fang at the University of South Carolina, the lab connects rigorous power-system theory with data-driven tools for planning, operating, and securing the future electric grid.</p>
   <div class="home-actions">
     <a class="btn btn--primary" href="{{ '/projects/' | relative_url }}">Research Projects</a>
     <a class="btn" href="{{ '/publications/' | relative_url }}">Publications</a>
@@ -29,13 +29,23 @@ redirect_from:
   </div>
   <div class="home-stat">
     <strong>NSF</strong>
-    <span>PowerCyber CyberTraining project for power engineering researchers</span>
+    <span>AI-enabled power-grid research, cyberinfrastructure, and workforce development</span>
   </div>
   <div class="home-stat">
     <strong>IEEE</strong>
     <span>senior member, associate editor, prize-paper author, and outstanding reviewer</span>
   </div>
 </div>
+
+<section class="home-ai-highlight">
+  <p class="home-kicker">AI-Enabled Power Systems</p>
+  <h2>Trustworthy AI grounded in grid physics.</h2>
+  <p>Our research combines power-system models with machine learning, scalable computing, and data-driven methods for stability assessment, planning, operations, and digital twins. The NSF-funded PowerCyber program expands this work through hands-on training and reusable research environments for AI-enabled power grids.</p>
+  <div class="home-actions">
+    <a class="btn btn--primary" href="{{ '/projects/2026-NSF-PowerCyber-Implementation' | relative_url }}">NSF PowerCyber Project</a>
+    <a class="btn" href="{{ '/publications/' | relative_url }}">AI and Grid Publications</a>
+  </div>
+</section>
 
 ## Research Focus
 
@@ -46,7 +56,7 @@ redirect_from:
   </section>
   <section class="home-card">
     <h3>Dynamics and Stability</h3>
-    <p>Frequency response, small-signal stability, virtual inertia, inverter-based resources, and analytical constraints that bridge dynamics with operations.</p>
+    <p>Frequency response, small-signal stability, machine-learning-assisted stability assessment, virtual inertia, inverter-based resources, and analytical constraints that bridge dynamics with operations.</p>
   </section>
   <section class="home-card">
     <h3>Grid Planning with Renewables</h3>
@@ -54,13 +64,14 @@ redirect_from:
   </section>
   <section class="home-card">
     <h3>Cyber-Physical Co-Simulation</h3>
-    <p>Transmission-and-distribution co-simulation, distributed energy resource integration, electric transportation, and scalable grid digital twins.</p>
+    <p>Transmission-and-distribution co-simulation, AI-enabled grid analytics, distributed energy resource integration, electric transportation, and scalable grid digital twins.</p>
   </section>
 </div>
 
 ## Recent Highlights
 
 <ul class="home-highlight-list">
+  <li><strong>July 2026.</strong> NSF funded the PowerCyber Implementation project to scale workforce development and research infrastructure for trustworthy AI-enabled power grids.</li>
   <li><strong>March 2026.</strong> The lab's paper on analytical small-signal stability analysis for low-inertia power systems was accepted by <em>Electric Power Systems Research</em>.</li>
   <li><strong>February 2026.</strong> Work on distributed optimization and control for autonomous DER dispatch and frequency regulation was accepted by <em>Sustainable Energy, Grids and Networks</em>.</li>
   <li><strong>January 2026.</strong> The paper on frequency nadir constrained unit commitment for island power systems was selected as one of two best papers in <em>IEEE Open Access Journal of Power and Energy</em> in 2025.</li>
@@ -75,4 +86,4 @@ Dr. Fang has published more than 50 journal papers in venues including <em>IEEE 
 
 ## Joining The Lab
 
-Prospective Ph.D. students interested in power system optimization, dynamics, transmission and distribution co-simulation, grid resilience, and electric-grid/transportation co-simulation are encouraged to contact Dr. Fang. A master's degree is preferred for Ph.D. applicants.
+Prospective Ph.D. students interested in trustworthy AI for power systems, optimization, dynamics, transmission and distribution co-simulation, grid resilience, and electric-grid/transportation co-simulation are encouraged to contact Dr. Fang. A master's degree is preferred for Ph.D. applicants.
