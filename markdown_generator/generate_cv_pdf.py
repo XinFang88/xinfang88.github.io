@@ -678,7 +678,10 @@ def build_pdf(repo_root: Path, output_path: Path) -> None:
 
     story.extend(section_heading("Editorial Leadership and Professional Service", styles))
     service_left = [
-        ("Vice Chair | from 2023", "IEEE PSOPE Bulk Power System Planning Subcommittee"),
+        (
+            "Chair | 2026-present; Vice Chair | 2023-2025",
+            "IEEE PSOPE Bulk Power System Planning Subcommittee",
+        ),
         ("Associate Editor | from 2022", "IEEE Transactions on Sustainable Energy"),
         ("Associate Editor | from 2020", "IEEE Transactions on Power Systems"),
     ]
