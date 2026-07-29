@@ -455,7 +455,11 @@ def build_pdf(repo_root: Path, output_path: Path) -> None:
         (str(len(journals)), "Journal articles"),
         (str(len(conferences)), "Conference papers"),
         ("$8.75M+", "Documented project portfolio"),
-        ("4", "Current Ph.D. researchers"),
+        (
+            '<link href="https://scholar.google.com/citations?user=lr3EP0AAAAAJ">'
+            '<font color="#0D766E">3,196</font></link>',
+            "Google Scholar citations",
+        ),
     ]
     metric_cells = []
     for value, label in metrics:
