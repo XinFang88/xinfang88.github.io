@@ -7,6 +7,8 @@ author_profile: true
 
 {% include base_path %}
 
+07/28/2026, I am delighted to share that my NSF CyberTraining Implementation award, "[Collaborative Research: CyberTraining: Implementation: Small: PowerCyber: Scalable Workforce Development for AI-Enabled Power Grids](https://www.nsf.gov/awardsearch/show-award?AWD_ID=2612494)" (Award #2612494), has been funded. In collaboration with Dr. Hantao Cui at North Carolina State University, this $200,000, three-year project will scale PowerCyber into a national training and community-building program for AI-enabled power-grid research.
+
 07/23/2026, my student Bishal Rijal's paper entitled "A Two-Stage Supply-Constrained Optimization for Distribution Transformer Replacement Planning" has been accepted for presentation at the 58th North American Power Symposium (NAPS 58).
 
 07/23/2026, my student Adarsha Chalise's paper entitled "Energy Storage Sizing Optimization for Island Power Systems considering Flexible Operation" has been accepted for presentation at the 58th North American Power Symposium (NAPS 58).
