@@ -12,7 +12,7 @@ from pathlib import Path
 
 from reportlab.lib import colors
 from reportlab.lib.enums import TA_CENTER, TA_LEFT, TA_RIGHT
-from reportlab.lib.pagesizes import letter
+from reportlab.lib.pagesizes import A4
 from reportlab.lib.styles import ParagraphStyle, getSampleStyleSheet
 from reportlab.lib.units import inch
 from reportlab.pdfbase.ttfonts import TTFont
@@ -194,8 +194,8 @@ def make_styles(regular_font: str, bold_font: str) -> dict[str, ParagraphStyle]:
             "Name",
             parent=base["Title"],
             fontName=bold_font,
-            fontSize=23,
-            leading=26,
+            fontSize=24,
+            leading=27,
             textColor=CHARCOAL,
             alignment=TA_CENTER,
             spaceAfter=4,
@@ -204,8 +204,8 @@ def make_styles(regular_font: str, bold_font: str) -> dict[str, ParagraphStyle]:
             "Role",
             parent=base["Normal"],
             fontName=regular_font,
-            fontSize=10,
-            leading=13,
+            fontSize=10.8,
+            leading=13.8,
             textColor=BLUE,
             alignment=TA_CENTER,
             spaceAfter=3,
@@ -214,8 +214,8 @@ def make_styles(regular_font: str, bold_font: str) -> dict[str, ParagraphStyle]:
             "Contact",
             parent=base["Normal"],
             fontName=regular_font,
-            fontSize=7.8,
-            leading=10.2,
+            fontSize=8.8,
+            leading=11.5,
             textColor=MUTED,
             alignment=TA_CENTER,
         ),
@@ -223,8 +223,8 @@ def make_styles(regular_font: str, bold_font: str) -> dict[str, ParagraphStyle]:
             "Section",
             parent=base["Heading2"],
             fontName=bold_font,
-            fontSize=12.2,
-            leading=14.5,
+            fontSize=13,
+            leading=15.5,
             textColor=BLUE,
             spaceBefore=8,
             spaceAfter=5,
@@ -234,8 +234,8 @@ def make_styles(regular_font: str, bold_font: str) -> dict[str, ParagraphStyle]:
             "Subsection",
             parent=base["Heading3"],
             fontName=bold_font,
-            fontSize=9.2,
-            leading=11,
+            fontSize=10,
+            leading=12,
             textColor=TEAL,
             spaceBefore=3,
             spaceAfter=2,
@@ -245,8 +245,8 @@ def make_styles(regular_font: str, bold_font: str) -> dict[str, ParagraphStyle]:
             "Body",
             parent=base["BodyText"],
             fontName=regular_font,
-            fontSize=8.4,
-            leading=11.2,
+            fontSize=9.4,
+            leading=12.4,
             textColor=CHARCOAL,
             spaceAfter=3,
         ),
@@ -254,8 +254,8 @@ def make_styles(regular_font: str, bold_font: str) -> dict[str, ParagraphStyle]:
             "BodySmall",
             parent=base["BodyText"],
             fontName=regular_font,
-            fontSize=7.7,
-            leading=10,
+            fontSize=8.7,
+            leading=11.2,
             textColor=CHARCOAL,
             spaceAfter=2,
         ),
@@ -263,8 +263,8 @@ def make_styles(regular_font: str, bold_font: str) -> dict[str, ParagraphStyle]:
             "MetricValue",
             parent=base["Normal"],
             fontName=bold_font,
-            fontSize=13,
-            leading=15,
+            fontSize=13.5,
+            leading=15.5,
             textColor=TEAL,
             alignment=TA_CENTER,
         ),
@@ -272,8 +272,8 @@ def make_styles(regular_font: str, bold_font: str) -> dict[str, ParagraphStyle]:
             "MetricLabel",
             parent=base["Normal"],
             fontName=regular_font,
-            fontSize=6.9,
-            leading=8.5,
+            fontSize=7.8,
+            leading=9.6,
             textColor=MUTED,
             alignment=TA_CENTER,
         ),
@@ -281,36 +281,36 @@ def make_styles(regular_font: str, bold_font: str) -> dict[str, ParagraphStyle]:
             "TableHead",
             parent=base["Normal"],
             fontName=bold_font,
-            fontSize=7.5,
-            leading=9.3,
+            fontSize=8.2,
+            leading=10.2,
             textColor=WHITE,
         ),
         "table_body": ParagraphStyle(
             "TableBody",
             parent=base["Normal"],
             fontName=regular_font,
-            fontSize=7.2,
-            leading=9.2,
+            fontSize=8,
+            leading=10.2,
             textColor=CHARCOAL,
         ),
         "table_body_bold": ParagraphStyle(
             "TableBodyBold",
             parent=base["Normal"],
             fontName=bold_font,
-            fontSize=7.2,
-            leading=9.2,
+            fontSize=8,
+            leading=10.2,
             textColor=CHARCOAL,
         ),
         "publication": ParagraphStyle(
             "Publication",
             parent=base["BodyText"],
             fontName=regular_font,
-            fontSize=7.35,
-            leading=9.45,
+            fontSize=8.25,
+            leading=10.7,
             textColor=CHARCOAL,
             leftIndent=13,
             firstLineIndent=-13,
-            spaceAfter=3.2,
+            spaceAfter=4,
             allowWidows=0,
             allowOrphans=0,
         ),
@@ -318,8 +318,8 @@ def make_styles(regular_font: str, bold_font: str) -> dict[str, ParagraphStyle]:
             "Footer",
             parent=base["Normal"],
             fontName=regular_font,
-            fontSize=6.8,
-            leading=8,
+            fontSize=7.4,
+            leading=8.8,
             textColor=MUTED,
             alignment=TA_RIGHT,
         ),
@@ -389,20 +389,20 @@ def add_publication_section(
 
 def draw_page(canvas, doc) -> None:
     canvas.saveState()
-    width, height = letter
+    width, height = A4
     if doc.page > 1:
         canvas.setStrokeColor(LINE)
         canvas.setLineWidth(0.5)
         canvas.line(doc.leftMargin, height - 27, width - doc.rightMargin, height - 27)
         canvas.setFillColor(MUTED)
-        canvas.setFont(doc.regular_font, 6.8)
+        canvas.setFont(doc.regular_font, 7.4)
         canvas.drawString(doc.leftMargin, height - 20, "Xin Fang | Academic Curriculum Vitae")
         canvas.drawRightString(width - doc.rightMargin, height - 20, "Updated July 2026")
     canvas.setStrokeColor(LINE)
     canvas.setLineWidth(0.5)
     canvas.line(doc.leftMargin, 27, width - doc.rightMargin, 27)
     canvas.setFillColor(MUTED)
-    canvas.setFont(doc.regular_font, 6.8)
+    canvas.setFont(doc.regular_font, 7.4)
     canvas.drawString(doc.leftMargin, 17, "IDEAL Lab | University of South Carolina")
     canvas.drawRightString(width - doc.rightMargin, 17, f"Page {doc.page}")
     canvas.restoreState()
@@ -416,11 +416,11 @@ def build_pdf(repo_root: Path, output_path: Path) -> None:
     output_path.parent.mkdir(parents=True, exist_ok=True)
     doc = SimpleDocTemplate(
         str(output_path),
-        pagesize=letter,
+        pagesize=A4,
         rightMargin=0.55 * inch,
         leftMargin=0.55 * inch,
-        topMargin=0.48 * inch,
-        bottomMargin=0.48 * inch,
+        topMargin=0.55 * inch,
+        bottomMargin=0.55 * inch,
         title="Xin Fang - Curriculum Vitae",
         author="Xin Fang",
         subject="Academic curriculum vitae for faculty applications",
@@ -718,7 +718,6 @@ def build_pdf(repo_root: Path, output_path: Path) -> None:
         "Frequency Nadir Constrained Unit Commitment for High Renewable Penetration Island Power Systems",
         "Transmission-and-Distribution Dynamic Co-Simulation Framework for Distributed Energy Resource Frequency Response",
         "DLMP of Competitive Markets in Active Distribution Networks: Models, Solutions, Applications, and Visions",
-        "Secondary Frequency Regulation from Variable Generation Through Uncertainty Decomposition: An Economic and Reliability Perspective",
     ]
     journal_by_title = {
         clean_text(record.get("title")): record
@@ -760,7 +759,6 @@ def build_pdf(repo_root: Path, output_path: Path) -> None:
     )
     story.append(HRFlowable(width="100%", thickness=2, color=TEAL, spaceAfter=5))
     add_publication_section(story, "Journal Articles", journals, styles)
-    story.append(PageBreak())
     add_publication_section(story, "Conference Papers", conferences, styles)
 
     doc.build(story, onFirstPage=draw_page, onLaterPages=draw_page)
