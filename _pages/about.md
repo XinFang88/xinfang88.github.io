@@ -40,9 +40,10 @@ redirect_from:
 <section class="home-ai-highlight">
   <p class="home-kicker">AI-Enabled Power Systems</p>
   <h2>Trustworthy AI grounded in grid physics.</h2>
-  <p>Our research combines power-system models with machine learning, scalable computing, and data-driven methods for stability assessment, planning, operations, and digital twins. The NSF-funded PowerCyber program expands this work through hands-on training and reusable research environments for AI-enabled power grids.</p>
+  <p>Our research combines power-system models with machine learning, scalable computing, and data-driven methods for stability assessment, planning, operations, and digital twins. NSF-funded projects advance both workforce development for trustworthy AI-enabled grids and scalable optimization that embeds multiscale inverter-based-resource frequency stability directly into grid operations.</p>
   <div class="home-actions">
-    <a class="btn btn--primary" href="{{ '/projects/2026-NSF-PowerCyber-Implementation' | relative_url }}">NSF PowerCyber Project</a>
+    <a class="btn btn--primary" href="{{ '/projects/2026-NSF-Multiscale-Frequency-UC' | relative_url }}">NSF Frequency Stability Project</a>
+    <a class="btn" href="{{ '/projects/2026-NSF-PowerCyber-Implementation' | relative_url }}">NSF PowerCyber Project</a>
     <a class="btn" href="{{ '/publications/' | relative_url }}">AI and Grid Publications</a>
   </div>
 </section>
@@ -71,6 +72,7 @@ redirect_from:
 ## Recent Highlights
 
 <ul class="home-highlight-list">
+  <li><strong>August 2026.</strong> NSF awarded $571,614 to develop parallel AC optimal-power-flow methods for multiscale frequency-stability-constrained operation of inverter-rich power grids.</li>
   <li><strong>July 2026.</strong> NSF funded the PowerCyber Implementation project to scale workforce development and research infrastructure for trustworthy AI-enabled power grids.</li>
   <li><strong>March 2026.</strong> The lab's paper on analytical small-signal stability analysis for low-inertia power systems was accepted by <em>Electric Power Systems Research</em>.</li>
   <li><strong>February 2026.</strong> Work on distributed optimization and control for autonomous DER dispatch and frequency regulation was accepted by <em>Sustainable Energy, Grids and Networks</em>.</li>

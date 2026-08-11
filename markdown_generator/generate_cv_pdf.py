@@ -397,7 +397,7 @@ def draw_page(canvas, doc) -> None:
         canvas.setFillColor(MUTED)
         canvas.setFont(doc.regular_font, 7.4)
         canvas.drawString(doc.leftMargin, height - 20, "Xin Fang | Academic Curriculum Vitae")
-        canvas.drawRightString(width - doc.rightMargin, height - 20, "Updated July 2026")
+        canvas.drawRightString(width - doc.rightMargin, height - 20, "Updated August 2026")
     canvas.setStrokeColor(LINE)
     canvas.setLineWidth(0.5)
     canvas.line(doc.leftMargin, 27, width - doc.rightMargin, 27)
@@ -454,7 +454,7 @@ def build_pdf(repo_root: Path, output_path: Path) -> None:
     metrics = [
         (str(len(journals)), "Journal articles"),
         (str(len(conferences)), "Conference papers"),
-        ("$8.75M+", "Documented project portfolio"),
+        ("$9.32M+", "Documented project portfolio"),
         (
             '<link href="https://scholar.google.com/citations?user=lr3EP0AAAAAJ">'
             '<font color="#0D766E">3,196</font></link>',
@@ -549,15 +549,66 @@ def build_pdf(repo_root: Path, output_path: Path) -> None:
     ]
     story.append(two_col_entries(appointments, education, styles))
 
+    story.extend(section_heading("Graduate Advising and Student Development", styles))
+    advisees = [
+        ("Yuxin Deng | Ph.D. researcher, Spring 2023-present", "Power-system optimization, planning, stability analysis, and renewable integration."),
+        ("Prasant Basnet | Ph.D. researcher, Fall 2022-present; M.S. 2025", "IBR-aware capacity expansion, dynamics, cyber-physical modeling; NREL intern."),
+        ("Bishal Rijal | Ph.D. researcher, Spring 2025-present", "Distribution planning, transformer replacement, renewable integration, and system strength; INL intern."),
+        ("Adarsha Chalise | Ph.D. researcher, Spring 2026-present", "Island power systems, energy-storage sizing, flexible operation, and reliability."),
+    ]
+    advising_rows = []
+    for index in range(0, len(advisees), 2):
+        row = []
+        for title, detail in advisees[index : index + 2]:
+            row.append(
+                rich(
+                    f"<b>{html.escape(title)}</b><br/>"
+                    f'<font color="#5D686E">{html.escape(detail)}</font>',
+                    styles["body_small"],
+                )
+            )
+        advising_rows.append(row)
+    advising_table = Table(advising_rows, colWidths=[3.45 * inch, 3.45 * inch], hAlign="LEFT")
+    advising_table.setStyle(
+        TableStyle(
+            [
+                ("VALIGN", (0, 0), (-1, -1), "TOP"),
+                ("LEFTPADDING", (0, 0), (-1, -1), 0),
+                ("RIGHTPADDING", (0, 0), (-1, -1), 12),
+                ("TOPPADDING", (0, 0), (-1, -1), 2),
+                ("BOTTOMPADDING", (0, 0), (-1, -1), 5),
+            ]
+        )
+    )
+    story.append(advising_table)
+
+    story.extend(section_heading("Teaching Portfolio", styles))
+    teaching = [
+        ("ELCT 221 | Circuits II", "Spring and Fall 2026 | Undergraduate"),
+        ("ELCT 451 | Power System Design and Analysis", "Fall 2025 | Undergraduate"),
+        ("ECE 5990 | Power Systems Economics", "Spring 2025 | Undergraduate and graduate"),
+        ("ECE 4613/6613 | Power Transmission Systems", "Fall 2023 and 2024 | Undergraduate and graduate"),
+        ("ECE 4633/6633 | Power Distribution Systems", "Spring 2023 | Undergraduate and graduate"),
+        ("ECE 3643 | Electronic Circuits I", "Fall 2022 | Undergraduate"),
+    ]
+    story.append(two_col_entries(teaching[:3], teaching[3:], styles))
+
+    story.append(PageBreak())
     story.extend(section_heading("Sponsored Research Leadership", styles))
     story.append(
         p(
-            "Eight sponsored projects as PI or Co-PI: $962.5K in documented Fang/USC award share "
-            "across at least $8.75M in collaborative project activity supported by NSF, DOE, NREL, and INL.",
+            "Nine sponsored projects as PI or Co-PI: $1.53M in documented Fang/USC award share "
+            "across at least $9.32M in collaborative project activity supported by NSF, DOE, NREL, and INL.",
             styles["body_small"],
         )
     )
     projects = [
+        (
+            "2026-2029",
+            "Parallel AC OPF-Based Multiscale Frequency Stability-Constrained Unit Commitment with IBRs (NSF Award #2534476)",
+            "USC PI | NSF",
+            "$571.6K award",
+        ),
         (
             "2027-2029",
             "PowerCyber: Scalable Workforce Development for AI-Enabled Power Grids (NSF Award #2612494)",
@@ -611,51 +662,6 @@ def build_pdf(repo_root: Path, output_path: Path) -> None:
     )
     story.append(project_table)
 
-    story.append(PageBreak())
-    story.extend(section_heading("Graduate Advising and Student Development", styles))
-    advisees = [
-        ("Yuxin Deng | Ph.D. researcher, Spring 2023-present", "Power-system optimization, planning, stability analysis, and renewable integration."),
-        ("Prasant Basnet | Ph.D. researcher, Fall 2022-present; M.S. 2025", "IBR-aware capacity expansion, dynamics, cyber-physical modeling; NREL intern."),
-        ("Bishal Rijal | Ph.D. researcher, Spring 2025-present", "Distribution planning, transformer replacement, renewable integration, and system strength; INL intern."),
-        ("Adarsha Chalise | Ph.D. researcher, Spring 2026-present", "Island power systems, energy-storage sizing, flexible operation, and reliability."),
-    ]
-    advising_rows = []
-    for index in range(0, len(advisees), 2):
-        row = []
-        for title, detail in advisees[index : index + 2]:
-            row.append(
-                rich(
-                    f"<b>{html.escape(title)}</b><br/>"
-                    f'<font color="#5D686E">{html.escape(detail)}</font>',
-                    styles["body_small"],
-                )
-            )
-        advising_rows.append(row)
-    advising_table = Table(advising_rows, colWidths=[3.45 * inch, 3.45 * inch], hAlign="LEFT")
-    advising_table.setStyle(
-        TableStyle(
-            [
-                ("VALIGN", (0, 0), (-1, -1), "TOP"),
-                ("LEFTPADDING", (0, 0), (-1, -1), 0),
-                ("RIGHTPADDING", (0, 0), (-1, -1), 12),
-                ("TOPPADDING", (0, 0), (-1, -1), 2),
-                ("BOTTOMPADDING", (0, 0), (-1, -1), 5),
-            ]
-        )
-    )
-    story.append(advising_table)
-
-    story.extend(section_heading("Teaching Portfolio", styles))
-    teaching = [
-        ("ELCT 221 | Circuits II", "Spring and Fall 2026 | Undergraduate"),
-        ("ELCT 451 | Power System Design and Analysis", "Fall 2025 | Undergraduate"),
-        ("ECE 5990 | Power Systems Economics", "Spring 2025 | Undergraduate and graduate"),
-        ("ECE 4613/6613 | Power Transmission Systems", "Fall 2023 and 2024 | Undergraduate and graduate"),
-        ("ECE 4633/6633 | Power Distribution Systems", "Spring 2023 | Undergraduate and graduate"),
-        ("ECE 3643 | Electronic Circuits I", "Fall 2022 | Undergraduate"),
-    ]
-    story.append(two_col_entries(teaching[:3], teaching[3:], styles))
-
     story.extend(section_heading("Selected Awards and Honors", styles))
     awards = [
         ("2025", "Best Paper Award, IEEE Open Access Journal of Power and Energy"),
@@ -695,6 +701,7 @@ def build_pdf(repo_root: Path, output_path: Path) -> None:
     )
     story.append(award_table)
 
+    story.append(PageBreak())
     story.extend(section_heading("Editorial Leadership and Professional Service", styles))
     service_left = [
         (
@@ -735,7 +742,6 @@ def build_pdf(repo_root: Path, output_path: Path) -> None:
             )
         )
 
-    story.append(PageBreak())
     story.append(
         Paragraph(
             "Complete Publication Record",
