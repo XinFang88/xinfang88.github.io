@@ -22,7 +22,6 @@ from reportlab.pdfbase import pdfmetrics
 from reportlab.platypus import (
     HRFlowable,
     KeepTogether,
-    PageBreak,
     Paragraph,
     SimpleDocTemplate,
     Spacer,
@@ -387,9 +386,11 @@ def rich(text: str, style: ParagraphStyle) -> Paragraph:
 
 
 def section_heading(title: str, styles: dict[str, ParagraphStyle]) -> list[object]:
+    divider = HRFlowable(width="100%", thickness=0.7, color=LINE, spaceAfter=4)
+    divider.keepWithNext = True
     return [
         Paragraph(title, styles["section"]),
-        HRFlowable(width="100%", thickness=0.7, color=LINE, spaceAfter=4),
+        divider,
     ]
 
 
@@ -646,7 +647,6 @@ def build_pdf(repo_root: Path, output_path: Path, scholar_citations: int) -> Non
     ]
     story.append(two_col_entries(teaching[:3], teaching[3:], styles))
 
-    story.append(PageBreak())
     story.extend(section_heading("Sponsored Research Leadership", styles))
     story.append(
         p(
@@ -770,7 +770,6 @@ def build_pdf(repo_root: Path, output_path: Path, scholar_citations: int) -> Non
     ]
     story.append(two_col_entries(service_left, service_right, styles))
 
-    story.append(PageBreak())
     story.extend(section_heading("Selected Research Contributions", styles))
     selected_titles = [
         "Short-Circuit Ratio Constrained Robust Unit Commitment with Grid-Forming Energy Storage: A Filter-Column-and-Constraint Generation Algorithm",
