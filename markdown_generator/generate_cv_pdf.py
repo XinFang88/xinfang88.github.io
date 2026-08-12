@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate Xin Fang's academic CV PDF from the website publication records."""
+"""Generate Xin Fang's academic CV PDF with live Google Scholar metrics."""
 
 from __future__ import annotations
 
@@ -9,6 +9,8 @@ import html
 import re
 from datetime import date
 from pathlib import Path
+from urllib.error import URLError
+from urllib.request import Request, urlopen
 
 from reportlab.lib import colors
 from reportlab.lib.enums import TA_CENTER, TA_LEFT, TA_RIGHT
@@ -46,6 +48,56 @@ SOFT_GREEN = colors.HexColor("#EEF5EE")
 SOFT_PLUM = colors.HexColor("#F4EFF7")
 SOFT_CORAL = colors.HexColor("#F8EEEE")
 WHITE = colors.white
+GOOGLE_SCHOLAR_USER_ID = "lr3EP0AAAAAJ"
+GOOGLE_SCHOLAR_PROFILE_URL = (
+    "https://scholar.google.com/citations?hl=en&user=" + GOOGLE_SCHOLAR_USER_ID
+)
+
+
+def fetch_google_scholar_citations(timeout: float = 20) -> int:
+    request = Request(
+        GOOGLE_SCHOLAR_PROFILE_URL,
+        headers={
+            "Accept-Language": "en-US,en;q=0.9",
+            "User-Agent": (
+                "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+                "AppleWebKit/537.36 (KHTML, like Gecko) "
+                "Chrome/131.0 Safari/537.36"
+            ),
+        },
+    )
+    try:
+        with urlopen(request, timeout=timeout) as response:
+            charset = response.headers.get_content_charset() or "utf-8"
+            page = response.read().decode(charset, errors="replace")
+    except (OSError, URLError) as exc:
+        raise RuntimeError(
+            "Could not retrieve the live Google Scholar citation count. "
+            "Check the network connection or use --scholar-citations for an "
+            "intentional manual override."
+        ) from exc
+
+    if GOOGLE_SCHOLAR_USER_ID not in page or "Xin Fang" not in page:
+        raise RuntimeError(
+            "Google Scholar returned an unexpected page instead of Xin Fang's profile. "
+            "Use --scholar-citations only if a manual override is intentional."
+        )
+
+    patterns = [
+        r'<td[^>]*class=["\']gsc_rsb_std["\'][^>]*>\s*([\d,]+)\s*</td>',
+        r"Cited by\s*([\d,]+)",
+    ]
+    for pattern in patterns:
+        match = re.search(pattern, page, flags=re.IGNORECASE)
+        if match:
+            count = int(match.group(1).replace(",", ""))
+            if count > 0:
+                return count
+
+    raise RuntimeError(
+        "The Google Scholar profile loaded, but its citation count could not be parsed. "
+        "Use --scholar-citations only if a manual override is intentional."
+    )
 
 
 def clean_text(value: object) -> str:
@@ -397,7 +449,7 @@ def draw_page(canvas, doc) -> None:
         canvas.setFillColor(MUTED)
         canvas.setFont(doc.regular_font, 7.4)
         canvas.drawString(doc.leftMargin, height - 20, "Xin Fang | Academic Curriculum Vitae")
-        canvas.drawRightString(width - doc.rightMargin, height - 20, "Updated August 2026")
+        canvas.drawRightString(width - doc.rightMargin, height - 20, doc.updated_label)
     canvas.setStrokeColor(LINE)
     canvas.setLineWidth(0.5)
     canvas.line(doc.leftMargin, 27, width - doc.rightMargin, 27)
@@ -408,7 +460,7 @@ def draw_page(canvas, doc) -> None:
     canvas.restoreState()
 
 
-def build_pdf(repo_root: Path, output_path: Path) -> None:
+def build_pdf(repo_root: Path, output_path: Path, scholar_citations: int) -> None:
     journals, conferences = publication_records(repo_root)
     regular_font, bold_font = register_fonts(repo_root)
     styles = make_styles(regular_font, bold_font)
@@ -426,6 +478,7 @@ def build_pdf(repo_root: Path, output_path: Path) -> None:
         subject="Academic curriculum vitae for faculty applications",
     )
     doc.regular_font = regular_font
+    doc.updated_label = date.today().strftime("Updated %B %Y")
     story: list[object] = []
 
     story.append(Paragraph("Xin Fang, Ph.D.", styles["name"]))
@@ -457,7 +510,7 @@ def build_pdf(repo_root: Path, output_path: Path) -> None:
         ("$9.32M+", "Documented project portfolio"),
         (
             '<link href="https://scholar.google.com/citations?user=lr3EP0AAAAAJ">'
-            '<font color="#0D766E">3,196</font></link>',
+            f'<font color="#0D766E">{scholar_citations:,}</font></link>',
             "Google Scholar citations",
         ),
     ]
@@ -701,7 +754,6 @@ def build_pdf(repo_root: Path, output_path: Path) -> None:
     )
     story.append(award_table)
 
-    story.append(PageBreak())
     story.extend(section_heading("Editorial Leadership and Professional Service", styles))
     service_left = [
         (
@@ -718,6 +770,7 @@ def build_pdf(repo_root: Path, output_path: Path) -> None:
     ]
     story.append(two_col_entries(service_left, service_right, styles))
 
+    story.append(PageBreak())
     story.extend(section_heading("Selected Research Contributions", styles))
     selected_titles = [
         "Short-Circuit Ratio Constrained Robust Unit Commitment with Grid-Forming Energy Storage: A Filter-Column-and-Constraint Generation Algorithm",
@@ -784,14 +837,42 @@ def main() -> None:
         default=None,
         help="Output PDF path (defaults to assets/files/Xin_Fang_CV.pdf)",
     )
+    parser.add_argument(
+        "--scholar-citations",
+        type=int,
+        default=None,
+        help="Explicit citation-count override; by default the live Scholar profile is queried",
+    )
+    parser.add_argument(
+        "--scholar-timeout",
+        type=float,
+        default=20,
+        help="Seconds to wait for the live Google Scholar profile (default: 20)",
+    )
     args = parser.parse_args()
+    if args.scholar_citations is not None and args.scholar_citations < 0:
+        parser.error("--scholar-citations must be zero or greater")
+    if args.scholar_timeout <= 0:
+        parser.error("--scholar-timeout must be greater than zero")
+
+    if args.scholar_citations is None:
+        try:
+            scholar_citations = fetch_google_scholar_citations(args.scholar_timeout)
+        except RuntimeError as exc:
+            parser.error(str(exc))
+        citation_source = "live profile"
+    else:
+        scholar_citations = args.scholar_citations
+        citation_source = "manual override"
+
     repo_root = args.repo.resolve()
     output_path = (
         args.output.resolve()
         if args.output
         else repo_root / "assets" / "files" / "Xin_Fang_CV.pdf"
     )
-    build_pdf(repo_root, output_path)
+    build_pdf(repo_root, output_path, scholar_citations)
+    print(f"Google Scholar citations ({citation_source}): {scholar_citations:,}")
     print(f"Generated {output_path}")
 
 
