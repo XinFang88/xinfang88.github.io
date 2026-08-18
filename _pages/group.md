@@ -20,3 +20,5 @@ Prasant Basnet (from Fall 2022) completed his Bachelor’s degree in Electrical 
 Alumni:
 ======
 **Yuxin Deng (Ph.D., 2026)** joined the group in Spring 2023 and successfully defended his dissertation, *"Frequency Stability Constrained Hybrid Power Plant Operation under High Renewable Energy Penetration."* He received his M.S. degree from Southeast University in Nanjing, China. His research interests include power system optimization, planning, stability analysis, integrated optimization and dynamics, electricity-market operation, and renewable energy integration.
+
+**Prasant Basnet (M.S., 2025)** earned his Master of Science in Electrical Engineering from Mississippi State University. He continues his Ph.D. studies with Dr. Fang, focusing on capacity expansion planning for power systems with high penetrations of inverter-based resources.
