@@ -17,7 +17,6 @@ Bishal Rijal (from Spring 2025) earned his bachelor’s degree in electrical eng
 
 Prasant Basnet (from Fall 2022) completed his Bachelor’s degree in Electrical and Electronics Engineering at Kathmandu University, Nepal in 2017. He joined Mississippi State University in Fall 2022 as a Ph.D. student and earned his Master of Science in Electrical Engineering there in 2025. He worked as a Graduate Power System Intern in the Grid Operation Planning group at NREL from February 2025 to August 2025. His research interests include power system optimization, power system dynamics, cyber physical power system modeling, and renewable energy integration. He is currently working on capacity expansion planning with a high penetration of inverter-based resources (IBRs), with a focus on power system dynamics. 
 
-Yuxin Deng (from Spring 2023) received the M.S. degree from Southeast University, Nanjing, China. He is currently pursuing the Ph.D. degree with University of South Carolina transfered from Mississippi State University, USA. His
-research interests include power system optimization, planning, and stability analysis, integrated optimization and dynamics, and electricity
-market operation considering renewable energy
-integration.
+Alumni:
+======
+**Yuxin Deng (Ph.D., 2026)** joined the group in Spring 2023 and successfully defended his dissertation, *"Frequency Stability Constrained Hybrid Power Plant Operation under High Renewable Energy Penetration."* He received his M.S. degree from Southeast University in Nanjing, China. His research interests include power system optimization, planning, stability analysis, integrated optimization and dynamics, electricity-market operation, and renewable energy integration.

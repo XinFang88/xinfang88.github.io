@@ -7,6 +7,8 @@ author_profile: true
 
 {% include base_path %}
 
+08/18/2026, congratulations to Yuxin Deng on successfully defending his Ph.D. dissertation, "Frequency Stability Constrained Hybrid Power Plant Operation under High Renewable Energy Penetration." This milestone reflects his important research contributions to the reliable operation of renewable-rich power systems.
+
 08/10/2026, I am delighted to share that my NSF project, "[Parallel Alternating Current Optimal Power Flow-based Multiscale Frequency Stability-Constrained Unit Commitment with Inverter-based Resources](https://www.nsf.gov/awardsearch/show-award?AWD_ID=2534476)" (Award #2534476), has been funded. I will serve as PI, with Dr. Yong Fu at Mississippi State University as Co-PI. This $571,614, three-year project will develop scalable optimization methods that co-optimize electricity production, operating reserves, and inverter control parameters while maintaining multiscale frequency stability in power grids with high penetrations of inverter-based resources.
 
 07/28/2026, I am delighted to share that my NSF CyberTraining Implementation award, "[Collaborative Research: CyberTraining: Implementation: Small: PowerCyber: Scalable Workforce Development for AI-Enabled Power Grids](https://www.nsf.gov/awardsearch/show-award?AWD_ID=2612494)" (Award #2612494), has been funded. In collaboration with Dr. Hantao Cui at North Carolina State University, this $200,000, three-year project will scale PowerCyber into a national training and community-building program for AI-enabled power-grid research.
