@@ -28,6 +28,7 @@ redirect_from:
     <a class="btn btn--primary" href="{{ '/assets/files/Xin_Fang_CV.pdf' | relative_url }}"><i class="fas fa-file-pdf" aria-hidden="true"></i> Full CV (PDF)</a>
     <a class="btn" href="mailto:fangxin@sc.edu"><i class="fas fa-envelope" aria-hidden="true"></i> Email</a>
     <a class="btn" href="{{ '/publications/' | relative_url }}"><i class="fas fa-book-open" aria-hidden="true"></i> Publications</a>
+    <a class="btn" href="{{ site.author.googlescholar }}" target="_blank" rel="noopener"><i class="ai ai-google-scholar" aria-hidden="true"></i> Live Scholar Citations</a>
   </div>
 </section>
 
@@ -45,7 +46,7 @@ redirect_from:
     <span>sponsored research projects</span>
   </div>
   <div class="cv-stat">
-    <strong>4</strong>
+    <strong>3</strong>
     <span>current Ph.D. researchers</span>
   </div>
 </div>
@@ -130,15 +131,15 @@ redirect_from:
 
 <section class="cv-section">
   <p class="cv-eyebrow">Mentoring</p>
-  <h2>Advising and Student Development</h2>
+  <h2>Graduate Advising and Alumni</h2>
   <div class="cv-advisee-grid">
     <div>
       <h3>Yuxin Deng</h3>
-      <p>Ph.D. researcher in power-system optimization, planning, stability analysis, and renewable integration.</p>
+      <p>Ph.D. graduate, 2026. Dissertation: <em>Frequency Stability Constrained Hybrid Power Plant Operation under High Renewable Energy Penetration</em>.</p>
     </div>
     <div>
       <h3>Prasant Basnet</h3>
-      <p>Ph.D. researcher in IBR-aware capacity expansion, dynamics, and cyber-physical power-system modeling; NREL intern.</p>
+      <p>Current Ph.D. researcher and M.S. graduate, 2025, in IBR-aware capacity expansion, dynamics, and cyber-physical power-system modeling; NREL intern.</p>
     </div>
     <div>
       <h3>Bishal Rijal</h3>

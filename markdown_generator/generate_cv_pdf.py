@@ -505,14 +505,18 @@ def build_pdf(repo_root: Path, output_path: Path, scholar_citations: int) -> Non
     story.append(Spacer(1, 6))
     story.append(HRFlowable(width="100%", thickness=2.2, color=TEAL, spaceAfter=7))
 
+    scholar_metric_label = (
+        f'<link href="{GOOGLE_SCHOLAR_PROFILE_URL}">'
+        '<font color="#58656E">Google Scholar citations<br/>Click for live count</font></link>'
+    )
     metrics = [
         (str(len(journals)), "Journal articles"),
         (str(len(conferences)), "Conference papers"),
         ("$9.32M+", "Documented project portfolio"),
         (
-            '<link href="https://scholar.google.com/citations?user=lr3EP0AAAAAJ">'
+            f'<link href="{GOOGLE_SCHOLAR_PROFILE_URL}">'
             f'<font color="#0D766E">{scholar_citations:,}</font></link>',
-            "Google Scholar citations",
+            scholar_metric_label,
         ),
     ]
     metric_cells = []
@@ -603,10 +607,16 @@ def build_pdf(repo_root: Path, output_path: Path, scholar_citations: int) -> Non
     ]
     story.append(two_col_entries(appointments, education, styles))
 
-    story.extend(section_heading("Graduate Advising and Student Development", styles))
+    story.extend(section_heading("Graduate Advising and Alumni", styles))
     advisees = [
-        ("Yuxin Deng | Ph.D. researcher, Spring 2023-present", "Power-system optimization, planning, stability analysis, and renewable integration."),
-        ("Prasant Basnet | Ph.D. researcher, Fall 2022-present; M.S. 2025", "IBR-aware capacity expansion, dynamics, cyber-physical modeling; NREL intern."),
+        (
+            "Yuxin Deng | Ph.D. graduate, 2026",
+            "Dissertation: Frequency Stability Constrained Hybrid Power Plant Operation under High Renewable Energy Penetration.",
+        ),
+        (
+            "Prasant Basnet | Ph.D. researcher, Fall 2022-present; M.S. graduate, 2025",
+            "IBR-aware capacity expansion, dynamics, cyber-physical modeling; NREL intern.",
+        ),
         ("Bishal Rijal | Ph.D. researcher, Spring 2025-present", "Distribution planning, transformer replacement, renewable integration, and system strength; INL intern."),
         ("Adarsha Chalise | Ph.D. researcher, Spring 2026-present", "Island power systems, energy-storage sizing, flexible operation, and reliability."),
     ]
