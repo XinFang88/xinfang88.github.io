@@ -7,7 +7,7 @@ author_profile: true
 
 {% include base_path %}
 
-09/08/2026, congratulations to my student Bishal Rijal! His first-authored paper, "Thermal-Aging-Constrained Distribution Transformer Sizing for Demand-Side Resource Integration," co-authored with Xin Fang and Wenbo Wang, has been accepted for publication in the IEEE Open Access Journal of Power and Energy, a fully open-access journal. The paper develops a multiyear optimization framework for cost-effective distribution-transformer sizing and replacement planning under thermal aging, electric-vehicle charging, rooftop photovoltaic generation, heat-pump demand, load growth, and ambient-temperature uncertainty.
+09/08/2026, congratulations to my student Bishal Rijal! His first-authored paper, "[Thermal-Aging-Constrained Distribution Transformer Sizing for Demand-Side Resource Integration](https://ieeexplore.ieee.org/document/11688095)," co-authored with Xin Fang and Wenbo Wang, has been accepted for publication in the IEEE Open Access Journal of Power and Energy, a fully open-access journal. The paper develops a multiyear optimization framework for cost-effective distribution-transformer sizing and replacement planning under thermal aging, electric-vehicle charging, rooftop photovoltaic generation, heat-pump demand, load growth, and ambient-temperature uncertainty.
 
 09/01/2026, congratulations to my student Prasant Basnet on successfully defending his Ph.D. proposal, "Frequency Stability Constrained Power System Optimization with High Penetration of Inverter-Based Resources." His research advances optimization methods for maintaining frequency stability in power systems with high penetrations of inverter-based resources.
 
