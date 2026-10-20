@@ -19,7 +19,7 @@
     {% endif %}
   </p>
   <p class="publication-list-meta">
-    Published in <em>{{ pub.venue | strip }}</em>, {{ pub.date | default: "1900-01-01" | date: "%Y" }}{% if pub.paperurl %} · <a href="{{ pub.paperurl }}">Paper link</a>{% endif %}
+    Published in <em>{{ pub.venue | strip }}</em>, {{ pub.date | default: "1900-01-01" | date: "%Y" }}{% if pub.paperurl %} · <a href="{{ pub.paperurl }}">Paper link</a>{% endif %}{% if pub.codeurl %} · <a href="{{ pub.codeurl }}"><i class="fab fa-github" aria-hidden="true"></i> Open-source code</a>{% endif %}
   </p>
   {% if pub.citation %}
     <p class="publication-list-citation">

@@ -14,6 +14,7 @@ redirect_from:
   <div class="home-actions">
     <a class="btn btn--primary" href="{{ '/projects/' | relative_url }}">Research Projects</a>
     <a class="btn" href="{{ '/publications/' | relative_url }}">Publications</a>
+    <a class="btn" href="{{ '/code/' | relative_url }}">Code</a>
     <a class="btn" href="{{ '/group/' | relative_url }}">Group</a>
   </div>
 </section>

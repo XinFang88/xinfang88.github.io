@@ -5,4 +5,5 @@ date: 2026-09-08
 venue: 'IEEE Open Access Journal of Power and Energy'
 citation: 'Bishal Rijal, Xin Fang, and Wenbo Wang, "Thermal-Aging-Constrained Distribution Transformer Sizing for Demand-Side Resource Integration," IEEE Open Access Journal of Power and Energy, accepted for publication, 2026.'
 paperurl: 'https://ieeexplore.ieee.org/document/11688095'
+codeurl: 'https://github.com/rijalbishal/Thermal-Aging-Constrained-Distribution-Transformer-Sizing-for-Demand-Side-Resource-Integration'
 ---
