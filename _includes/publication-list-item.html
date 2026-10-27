@@ -21,6 +21,11 @@
   <p class="publication-list-meta">
     Published in <em>{{ pub.venue | strip }}</em>, {{ pub.date | default: "1900-01-01" | date: "%Y" }}{% if pub.paperurl %} · <a href="{{ pub.paperurl }}">Paper link</a>{% endif %}{% if pub.codeurl %} · <a href="{{ pub.codeurl }}"><i class="fab fa-github" aria-hidden="true"></i> Open-source code</a>{% endif %}
   </p>
+  {% if pub.award %}
+    <p class="publication-list-award">
+      <strong>Award:</strong> {{ pub.award }}{% if pub.awardurl %} · <a href="{{ pub.awardurl }}">Official IEEE announcement</a>{% endif %}{% if pub.awardpdf %} · <a href="{{ pub.awardpdf | relative_url }}">PDF</a>{% endif %}
+    </p>
+  {% endif %}
   {% if pub.citation %}
     <p class="publication-list-citation">
       <strong>Recommended citation:</strong> {{ pub.citation }}{% if pub.paperurl %} <a href="{{ pub.paperurl }}">Paper link</a>{% endif %}

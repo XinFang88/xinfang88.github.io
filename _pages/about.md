@@ -77,7 +77,7 @@ redirect_from:
   <li><strong>July 2026.</strong> NSF funded the PowerCyber Implementation project to scale workforce development and research infrastructure for trustworthy AI-enabled power grids.</li>
   <li><strong>March 2026.</strong> The lab's paper on analytical small-signal stability analysis for low-inertia power systems was accepted by <em>Electric Power Systems Research</em>.</li>
   <li><strong>February 2026.</strong> Work on distributed optimization and control for autonomous DER dispatch and frequency regulation was accepted by <em>Sustainable Energy, Grids and Networks</em>.</li>
-  <li><strong>January 2026.</strong> The paper on frequency nadir constrained unit commitment for island power systems was selected as one of two best papers in <em>IEEE Open Access Journal of Power and Energy</em> in 2025.</li>
+  <li><strong>January 2026.</strong> <a href="https://ieeexplore.ieee.org/abstract/document/10445517">Frequency Nadir Constrained Unit Commitment for High Renewable Penetration Island Power Systems</a> was selected as <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=11355900">one of two best papers</a> in <em>IEEE Open Access Journal of Power and Energy</em> in 2025. <a href="{{ '/assets/files/IEEE_OAJPE_2025_Best_Papers.pdf' | relative_url }}">Official announcement (PDF)</a>.</li>
   <li><strong>August 2025.</strong> Dr. Fang joined the University of South Carolina Department of Electrical Engineering.</li>
 </ul>
 
