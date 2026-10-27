@@ -187,7 +187,7 @@ redirect_from:
     <p class="cv-eyebrow">Professional Leadership</p>
     <h2>Editorial and IEEE Service</h2>
     <ul class="cv-service-list">
-      <li><strong>Chair</strong>, IEEE PSOPE Bulk Power System Planning Subcommittee, 2026-present</li>
+      <li><strong>Chair</strong>, <a href="https://site.ieee.org/pes-psope/subcommittees/bulk-power-system-planning-subcommittee/">IEEE PSOPE Bulk Power System Planning Subcommittee</a>, 2026-present</li>
       <li>Vice Chair, IEEE PSOPE Bulk Power System Planning Subcommittee, 2023-2025</li>
       <li>Associate Editor, IEEE Transactions on Sustainable Energy</li>
       <li>Associate Editor, IEEE Transactions on Power Systems</li>
