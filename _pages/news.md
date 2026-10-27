@@ -107,7 +107,7 @@ On 04/03/2023, our paper, "Battery Degradation Modeling in Hybrid Power Plants: 
 
 02/08/2023, our paper titled "[On Thermal Dynamics Embedded Static Voltage Stability Margin](https://ieeexplore.ieee.org/abstract/document/10048558)" has been accepted by IEEE PES Letter.
 
-01/05/2023,  Dr. Xin Fang is recognized as one of the five Outstanding Associate Editors of IEEE Transactions on Sustainable Energy in 2022. 
+01/05/2023, Dr. Xin Fang was recognized as one of the five Outstanding Associate Editors of IEEE Transactions on Sustainable Energy in 2022. [Read the Mississippi State announcement](https://www.ece.msstate.edu/ece-faculty-member-recognized-for-associate-editor-role/).
 
 12/13/2022, Our paper titled "[Manage Real-Time Power Imbalance with Renewable Energy: Fast Generation Dispatch or Adaptive Frequency Regulation?](https://ieeexplore.ieee.org/abstract/document/10002304)" has been accepted by IEEE Transactions on Power Systems.
 

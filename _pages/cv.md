@@ -174,12 +174,12 @@ redirect_from:
       <li><strong>Best Paper Award</strong>, IEEE Open Access Journal of Power and Energy, 2025, for <a href="https://ieeexplore.ieee.org/abstract/document/10445517">"Frequency Nadir Constrained Unit Commitment for High Renewable Penetration Island Power Systems"</a> · <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=11355900">Official IEEE announcement</a> · <a href="{{ '/assets/files/IEEE_OAJPE_2025_Best_Papers.pdf' | relative_url }}">PDF</a></li>
       <li><strong>IEEE PES PSOPE Technical Committee Prize Paper Award</strong>, 2024</li>
       <li><strong>Outstanding Associate Editor and Outstanding Reviewer</strong>, IEEE Transactions on Power Systems, 2023 · <a href="{{ '/assets/files/IEEE_TPWRS_2023_Outstanding_Reviewers_and_Associate_Editors.pdf' | relative_url }}">Recognition list (PDF)</a></li>
-      <li><strong>Outstanding Associate Editor</strong>, IEEE Transactions on Sustainable Energy, 2022</li>
+      <li><strong>Outstanding Associate Editor</strong>, IEEE Transactions on Sustainable Energy, 2022 · <a href="https://www.ece.msstate.edu/ece-faculty-member-recognized-for-associate-editor-role/">Mississippi State announcement</a></li>
       <li><strong>Outstanding Reviewer</strong>, IEEE Transactions on Sustainable Energy, 2021 · <a href="{{ '/assets/files/IEEE_TSTE_2021_Outstanding_Reviewers.pdf' | relative_url }}">Recognition list (PDF)</a></li>
       <li><strong>Best Journal Paper Award</strong>, Journal of Modern Power Systems and Clean Energy, 2019</li>
       <li><strong>Outstanding Reviewer</strong>, IEEE Transactions on Sustainable Energy, 2019 · <a href="{{ '/assets/files/IEEE_TSTE_2019_Outstanding_Reviewers.pdf' | relative_url }}">Recognition list (PDF)</a></li>
       <li><strong>Best Conference Paper</strong>, IEEE PES General Meeting, 2018</li>
-      <li><strong>Chancellor's Citation Award for Extraordinary Professional Promise</strong>, University of Tennessee, 2016</li>
+      <li><strong>Chancellor's Citation Award for Extraordinary Professional Promise</strong>, University of Tennessee, 2016 · <a href="{{ '/images/awards/UTK_Chancellors_Citation_2016.jpeg' | relative_url }}">Award photo</a></li>
     </ul>
   </section>
 
