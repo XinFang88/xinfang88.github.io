@@ -170,6 +170,7 @@ redirect_from:
     <p class="cv-eyebrow">Recognition</p>
     <h2>Selected Awards and Honors</h2>
     <ul class="cv-honor-list">
+      <li><strong>Best Poster Presentation Award</strong>, 58th North American Power Symposium (NAPS 58), 2026, for <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lr3EP0AAAAAJ&sortby=pubdate&citation_for_view=lr3EP0AAAAAJ:7BrZ7Jt4UNcC">"Grid-Interactive Data Centers for Voltage Regulation in Unbalanced Distribution Networks"</a> · <a href="{{ '/assets/files/NAPS_2026_Best_Poster_Award_Paper_243.pdf' | relative_url }}">Certificate (PDF)</a></li>
       <li><strong>Best Paper Award</strong>, IEEE Open Access Journal of Power and Energy, 2025</li>
       <li><strong>IEEE PES PSOPE Technical Committee Prize Paper Award</strong>, 2024</li>
       <li><strong>Outstanding Associate Editor</strong>, IEEE Transactions on Power Systems, 2023</li>
