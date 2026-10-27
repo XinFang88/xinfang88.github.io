@@ -79,7 +79,7 @@ author_profile: true
 
 01/17/2024, our paper titled "[Electric Vehicles Charging Time Constrained Deliverable Provision of Secondary Frequency Regulation](https://ieeexplore.ieee.org/abstract/document/10411057)" has been accepted by IEEE Transactions on Smart Grid.
 
-12/22/2023, Dr. Fang was recognized as the Outstanding Associate Editor and Outstanding Reviewer of IEEE Transactions on Power Systems in 2023!
+12/22/2023, Dr. Fang was recognized as the Outstanding Associate Editor and Outstanding Reviewer of IEEE Transactions on Power Systems in 2023! [View the IEEE PES recognition list (PDF)]({{ '/assets/files/IEEE_TPWRS_2023_Outstanding_Reviewers_and_Associate_Editors.pdf' | relative_url }}).
 
 11/6/2023, our paper titled "Power Sharing-Based Fast AGC Allocation Framework for Distributed Energy Resources," has been accepted by 2024 IEEE PES Transmission & Distribution Conference & Exposition, 6-9 May 2024 Anaheim, CA, USA.
 
