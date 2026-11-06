@@ -137,10 +137,7 @@ def parse_front_matter(path: Path) -> dict[str, str]:
     if not lines or lines[0].strip() != "---":
         return {}
     data: dict[str, str] = {}
-    key_pattern = re.compile(
-        r"^(title|collection|permalink|date|venue|paperurl|citation|"
-        r"publication_type|type|excerpt)\s*:"
-    )
+    key_pattern = re.compile(r"^[A-Za-z_][A-Za-z0-9_-]*\s*:")
     index = 1
     while index < len(lines):
         line = lines[index]
@@ -727,6 +724,13 @@ def build_pdf(repo_root: Path, output_path: Path, scholar_citations: int) -> Non
 
     story.extend(section_heading("Selected Awards and Honors", styles))
     awards = [
+        (
+            "2026",
+            "Best Poster Presentation Award, 58th North American Power Symposium (NAPS 58), "
+            'for "Grid-Interactive Data Centers for Voltage Regulation in Unbalanced Distribution Networks." '
+            '<link href="https://xinfang88.github.io/assets/files/NAPS_2026_Best_Poster_Award_Paper_243.pdf">'
+            '<font color="#0D766E">[certificate]</font></link>',
+        ),
         ("2025", "Best Paper Award, IEEE Open Access Journal of Power and Energy"),
         ("2024", "IEEE PES PSOPE Technical Committee Prize Paper Award"),
         ("2023", "Outstanding Associate Editor, IEEE Transactions on Power Systems"),
@@ -742,7 +746,7 @@ def build_pdf(repo_root: Path, output_path: Path, scholar_citations: int) -> Non
         [
             [
                 Paragraph(year, styles["table_body_bold"]),
-                Paragraph(html.escape(title), styles["table_body"]),
+                rich(title, styles["table_body"]),
             ]
             for year, title in awards
         ],
