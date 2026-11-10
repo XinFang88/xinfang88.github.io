@@ -7,6 +7,8 @@ author_profile: true
 
 {% include base_path %}
 
+11/09/2026, our paper, "[AI-Agent-Based Co-Simulation Workflow for Stability-Aware Grid Optimization](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lr3EP0AAAAAJ&sortby=pubdate&citation_for_view=lr3EP0AAAAAJ:PYBJJbyH-FwC)," authored by Xin Fang and Yuxin Deng, has been accepted for presentation at the 2027 IEEE PES Grid Edge Technologies Conference & Exposition. Congratulations to the team!
+
 10/13/2026, our paper, "[Grid-Interactive Data Centers for Voltage Regulation in Unbalanced Distribution Networks](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lr3EP0AAAAAJ&sortby=pubdate&citation_for_view=lr3EP0AAAAAJ:7BrZ7Jt4UNcC)," authored by Shengyi Wang, Muhammad Rizwan, Liang Du, and Xin Fang, received the **Best Poster Presentation Award** at the 58th North American Power Symposium (NAPS 58) hosted by Michigan Technological University. Congratulations to the team! [View the award certificate (PDF)]({{ '/assets/files/NAPS_2026_Best_Poster_Award_Paper_243.pdf' | relative_url }}).
 
 09/24/2026, congratulations to my student Adarsha Chalise! His first-authored paper, "Scheduling-Coupled BESS Duration Sizing for Zero-Curtailment Island Power Systems," co-authored with Yuxin Deng, Xin Fang, Sonia Martin, and Jin Tan, has been accepted for presentation at the 17th IEEE International Conference on Green Energy & Smart Systems (IEEE GESS 2026).
