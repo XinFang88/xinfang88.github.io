@@ -611,8 +611,8 @@ def build_pdf(repo_root: Path, output_path: Path, scholar_citations: int) -> Non
             "Dissertation: Frequency Stability Constrained Hybrid Power Plant Operation under High Renewable Energy Penetration.",
         ),
         (
-            "Prasant Basnet | Ph.D. researcher, Fall 2022-present; M.S. graduate, 2025",
-            "IBR-aware capacity expansion, dynamics, cyber-physical modeling; NREL intern.",
+            "Prasant Basnet | Ph.D. alumnus, 2026; M.S. graduate, 2025",
+            "Dissertation: Frequency Stability-Constrained Power System Optimization with High Penetration of Inverter-Based Resources. NREL intern.",
         ),
         ("Bishal Rijal | Ph.D. researcher, Spring 2025-present", "Distribution planning, transformer replacement, renewable integration, and system strength; INL intern."),
         ("Adarsha Chalise | Ph.D. researcher, Spring 2026-present", "Island power systems, energy-storage sizing, flexible operation, and reliability."),

@@ -46,7 +46,7 @@ redirect_from:
     <span>sponsored research projects</span>
   </div>
   <div class="cv-stat">
-    <strong>3</strong>
+    <strong>2</strong>
     <span>current Ph.D. researchers</span>
   </div>
 </div>
@@ -139,7 +139,7 @@ redirect_from:
     </div>
     <div>
       <h3>Prasant Basnet</h3>
-      <p>Current Ph.D. researcher and M.S. graduate, 2025, in IBR-aware capacity expansion, dynamics, and cyber-physical power-system modeling; NREL intern.</p>
+      <p>Ph.D. alumnus, 2026; M.S. graduate, 2025, Mississippi State University. Dissertation: <em>Frequency Stability-Constrained Power System Optimization with High Penetration of Inverter-Based Resources</em>. NREL intern.</p>
     </div>
     <div>
       <h3>Bishal Rijal</h3>
