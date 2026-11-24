@@ -393,6 +393,10 @@
   background: #fff;
   box-shadow: 0 1px 3px rgba(#000, 0.06);
 
+  > .code-card__body:only-child {
+    grid-column: 1 / -1;
+  }
+
   h2 {
     margin: 0 0 0.45rem;
     padding: 0;
