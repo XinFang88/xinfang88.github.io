@@ -19,7 +19,7 @@
     {% endif %}
   </p>
   <p class="publication-list-meta">
-    {% if pub.publication_status == "accepted" %}Accepted for presentation at{% else %}Published in{% endif %} <em>{{ pub.venue | strip }}</em>, {% if pub.publication_year %}{{ pub.publication_year }}{% else %}{{ pub.date | default: "1900-01-01" | date: "%Y" }}{% endif %}{% if pub.paperurl %} · <a href="{{ pub.paperurl }}">Paper link</a>{% endif %}{% if pub.codeurl %} · <a href="{{ pub.codeurl }}"><i class="fab fa-github" aria-hidden="true"></i> Open-source code</a>{% endif %}
+    {% if pub.publication_status == "accepted" %}{% if pub.publication_type == "conference" %}Accepted for presentation at{% else %}Accepted for publication in{% endif %}{% else %}Published in{% endif %} <em>{{ pub.venue | strip }}</em>, {% if pub.publication_year %}{{ pub.publication_year }}{% else %}{{ pub.date | default: "1900-01-01" | date: "%Y" }}{% endif %}{% if pub.paperurl %} · <a href="{{ pub.paperurl }}">Paper link</a>{% endif %}{% if pub.codeurl %} · <a href="{{ pub.codeurl }}"><i class="fab fa-github" aria-hidden="true"></i> Open-source code</a>{% endif %}
   </p>
   {% if pub.award %}
     <p class="publication-list-award">

@@ -31,6 +31,8 @@ author_profile: true
           <a class="btn btn--primary" href="{{ project.repositoryurl }}"><i class="fab fa-github" aria-hidden="true"></i> View code</a>
           {% if project.paperurl %}
             <a class="btn btn--inverse" href="{{ project.paperurl }}"><i class="fas fa-book-open" aria-hidden="true"></i> View paper</a>
+          {% elsif project.publicationurl %}
+            <a class="btn btn--inverse" href="{{ project.publicationurl | relative_url }}"><i class="fas fa-book-open" aria-hidden="true"></i> Publication details</a>
           {% endif %}
         </div>
       </div>
