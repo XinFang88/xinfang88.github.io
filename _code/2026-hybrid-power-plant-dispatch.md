@@ -5,6 +5,7 @@ date: 2026-11-24
 category: "Real-time dispatch code"
 authors: "Yuxin Deng, Xin Fang, and Jin Tan"
 venue: "Sustainable Energy, Grids and Networks"
+paperurl: "https://www.sciencedirect.com/science/article/pii/S2352467726005151"
 publication_type: journal
 publication_status: accepted
 publicationurl: "/publications/2026-segan-forecast-lyapunov-hpp-dispatch/"
@@ -17,4 +18,5 @@ Accepted for publication in *Sustainable Energy, Grids and Networks*.
 ## Resources
 
 - [Code repository on GitHub]({{ page.repositoryurl }})
+- [Publication on ScienceDirect]({{ page.paperurl }})
 - [Publication details]({{ page.publicationurl | relative_url }})

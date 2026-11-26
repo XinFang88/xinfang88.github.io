@@ -7,7 +7,7 @@ author_profile: true
 
 {% include base_path %}
 
-11/24/2026, our paper, "[Short-term Forecast-Augmented Surrogate Lyapunov-based Real-Time Dispatch of Hybrid Power Plants in Island Power Systems]({{ '/publications/2026-segan-forecast-lyapunov-hpp-dispatch/' | relative_url }})," authored by Yuxin Deng, Xin Fang, and Jin Tan, has been accepted for publication in *Sustainable Energy, Grids and Networks*. Congratulations to the team! [Code on GitHub](https://github.com/XinFang88/Real-time-dispatch-of-Hybrid-Power-Plants-in-Island-Power-Systems).
+11/24/2026, our paper, "[Short-term Forecast-Augmented Surrogate Lyapunov-based Real-Time Dispatch of Hybrid Power Plants in Island Power Systems](https://www.sciencedirect.com/science/article/pii/S2352467726005151)," authored by Yuxin Deng, Xin Fang, and Jin Tan, has been accepted for publication in *Sustainable Energy, Grids and Networks*. Congratulations to the team! [Code on GitHub](https://github.com/XinFang88/Real-time-dispatch-of-Hybrid-Power-Plants-in-Island-Power-Systems).
 
 11/24/2026, congratulations to my student Prasant Basnet on his Ph.D. final defense, "Frequency Stability-Constrained Power System Optimization with High Penetration of Inverter-Based Resources." His research focuses on frequency-stability-constrained optimization for power systems with high penetrations of inverter-based resources.
 
